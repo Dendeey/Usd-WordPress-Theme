@@ -17,7 +17,7 @@ Application web de type blog pour l'association sportive de l'USD. Vous y trouve
 
 ## Développement local
 
-- WampServer
+- Local WordPress
 
 ## Auteurs
 
