@@ -1,0 +1,43 @@
+.tribe-common .tribe-common-c-btn,
+.tribe-common a.tribe-common-c-btn,
+.tribe-common button.tribe-common-c-btn {
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to right, #034076 100%, #fdcd11);
+}
+
+.tribe-common .tribe-common-c-btn,
+.tribe-common a.tribe-common-c-btn,
+.tribe-common button.tribe-common-c-btn:hover {
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to right, #fdcd11 100%, #034076);
+}
+
+.tribe-common .tribe-common-c-btn-border,
+.tribe-common a.tribe-common-c-btn-border {
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to right, #034076 100%, #fdcd11);
+  border: none;
+}
+
+.tribe-common .tribe-common-c-btn-border,
+.tribe-common a.tribe-common-c-btn-border {
+  color: #fdcd11;
+}
+
+.tribe-events
+  .tribe-events-c-subscribe-dropdown
+  .tribe-events-c-subscribe-dropdown__button:hover {
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to right, #fdcd11 100%, #034076);
+  border: none;
+}
+
+.tribe-common .tribe-common-c-btn--clear {
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to right, #034076 100%, #fdcd11);
+}

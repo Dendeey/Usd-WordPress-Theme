@@ -1,0 +1,94 @@
+// Vars
+@import 'vars';
+
+//Content
+@import 'reset';
+@import 'header';
+@import 'front-page';
+@import 'partenaires';
+@import 'footer';
+@import 'actualites';
+@import '404';
+@import 'template-default';
+@import 'template-teams';
+@import 'template-default-bis';
+
+// Comportement général
+
+html {
+    font-size: 14px;
+    scroll-behavior: smooth !important;
+    overflow-x: hidden;
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: $mainBlue;
+    }
+
+    body {
+        min-height: 100vh;
+        width: 100vw;
+        line-height: 1.5;
+        font-family: 'Open Sans', sans-serif;
+
+        @font-face {
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap);
+            font-display: swap;
+        }
+    }
+
+    #overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 42;
+    }
+
+    .container__behavior{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    .main__all__pages{
+        margin-top: 63px;
+    }
+
+    .template-default__container__behavior{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .style__border__bottom {
+        display: inline-block;
+        width: 100%;
+        height: 4px;
+        background-image: linear-gradient(to right, $mainYellow 50%, $mainBlue 50%);
+    }
+
+    @media screen and (max-width : 767px) {
+        .template-default__container__behavior{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
+}

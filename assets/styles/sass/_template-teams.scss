@@ -1,0 +1,285 @@
+.teams__navigation {
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 63px;
+  z-index: 1;
+  overflow: hidden;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to right, $mainBlue 100%, $mainYellow);
+
+  .teams__classement-calendrier__navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-family: $openSans;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    & > button {
+      justify-content: center;
+      align-items: center;
+      width: 17rem;
+      height: 3rem;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 20rem;
+      border: 1px solid;
+      color: $mainBlue;
+      font-weight: 700;
+      font-size: 1.15rem;
+      font-family: $openSans;
+      background: linear-gradient(to left, #fff 50%, $mainYellow 50%) right;
+      background-size: 200%;
+      transition: 0.3s ease-out;
+      cursor: pointer;
+      display: flex;
+      flex-wrap: wrap;
+      text-transform: uppercase;
+
+      & > span {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+    }
+
+    & > button:hover {
+      background-position: left;
+    }
+  }
+
+  .teams__gallery__navigation {
+    font-family: $openSans;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    border-top: solid 3px $mainYellow;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to right, $mainBlue 100%, $mainYellow);
+    padding: 1rem;
+
+    & > ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      & > li {
+        & > button {
+          font-family: $openSans;
+          width: 10rem;
+          text-decoration: none;
+          border: none;
+          background-blend-mode: multiply;
+          background-color: rgba(0, 0, 0, 0.1);
+          background-image: linear-gradient(
+            to right,
+            $mainBlue 100%,
+            $mainYellow
+          );
+          color: white;
+          font-size: 1.15rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          cursor: pointer;
+          opacity: 0.5;
+        }
+
+        & > button:hover {
+          opacity: 1;
+          transition: 0.1s ease-out;
+        }
+      }
+    }
+  }
+
+  .teams__gallery__navigation::-webkit-scrollbar:horizontal {
+    display: none;
+  }
+}
+
+.teams__gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  font-family: $openSans;
+  padding-top: 6rem;
+
+  .teams__gallery__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: -3px;
+    }
+  }
+
+  .teams__gallery__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+    & > figure {
+      overflow: hidden;
+
+      & > picture {
+        & > img {
+          width: 100%;
+          height: auto;
+          transition: transform 0.5s;
+        }
+
+        & > img:hover {
+          transform: scale(1.5) translateX(10%);
+        }
+      }
+
+      & > img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.5s;
+      }
+
+      & > img:hover {
+        transform: scale(1.5) translateX(10%);
+      }
+    }
+  }
+
+  & > .style__border__bottom {
+    width: 50%;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+.teams__widgets {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-family: $openSans;
+
+  & > section {
+    padding: 6rem 0 0 0;
+
+    & > h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: -3px;
+      display: flex;
+      flex-wrap: wrap;
+
+      & > span {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .teams__widgets {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .teams__gallery {
+    .teams__gallery__content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+
+      & > figure {
+        & > img {
+          width: 100%;
+          height: auto;
+        }
+
+        & > picture {
+          & > img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s;
+          }
+
+          & > img:hover {
+            transform: scale(1.5) translateX(10%);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .teams__navigation {
+    .teams__classement-calendrier__navigation {
+      flex-wrap: nowrap;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      padding: 1rem;
+
+      & > button {
+        height: 4rem;
+      }
+    }
+
+    .teams__gallery__navigation {
+      justify-content: start;
+
+      & > ul {
+        gap: 1rem;
+      }
+    }
+  }
+
+  .teams__gallery {
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 3rem;
+    .teams__gallery__content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem;
+      width: 95vw;
+
+      & > figure {
+        & > img {
+          width: 100%;
+          height: auto;
+        }
+
+        & > picture {
+          & > img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s;
+          }
+
+          & > img:hover {
+            transform: scale(1.5) translateX(10%);
+          }
+        }
+      }
+    }
+  }
+
+  .teams__widgets {
+    & > section {
+      padding-top: 3rem;
+    }
+  }
+}
