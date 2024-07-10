@@ -1,3 +1,39 @@
+<?php if (!is_front_page()) { ?>
+    <section class="swiper-slider">
+        <h1 class="title__partenaires">Partenaires</h1>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/BreizhCola_logo.webp" alt="" class="swiper-sponsor"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/CAFPI.webp" alt="" class="swiper-sponsor"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/CAPCLIMAT.webp" alt="" class="swiper-sponsor"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/CLOUET.webp" alt="" class="swiper-sponsor"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/Crit_logo.webp" alt="" class="swiper-sponsor"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/Denual_logo.webp" alt="" class="swiper-sponsor"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/FERRON.webp" alt="" class="swiper-sponsor"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/groupama.png" alt="" class="swiper-sponsor"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/KerBtp_logo.webp" alt="" class="swiper-sponsor"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/LaCaveDesSaveurs_logo.webp" alt="" class="swiper-sponsor"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/LeComptoir_logo.webp" alt="" class="swiper-sponsor"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/lmconstruction.png" alt="" class="swiper-sponsor"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/motorcraft.png" alt="" class="swiper-sponsor"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/PLANCHAIS.webp" alt="" class="swiper-sponsor"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/plombreizh.png" alt="" class="swiper-sponsor"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/Safe_logo.webp" alt="" class="swiper-sponsor"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/SoCooc_logo.webp" alt="" class="swiper-sponsor"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/stephaneplaza.png" alt="" class="swiper-sponsor"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/superu.png" alt="" class="swiper-sponsor"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/t&c.png" alt="" class="swiper-sponsor"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/tiriault.png" alt="" class="swiper-sponsor"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/VAND.png" alt="" class="swiper-sponsor"></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/partenaires/vousfinancer.png" alt="" class="swiper-sponsor"></div>
+            </div>
+        </div>
+    </section>
+<?php } ?>
+
 <footer class="site__footer">
     <a class="footer__logo" href="<?php echo home_url('/'); ?>">
         <img class="footer__logo__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_usd.png" alt="Logo footer">
@@ -49,6 +85,7 @@
         'menu_class' => 'footer__menu', // ma classe personnalisée  
     )); ?>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <?php wp_footer(); ?>
 </body>

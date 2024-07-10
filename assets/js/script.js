@@ -190,4 +190,38 @@ window.addEventListener("DOMContentLoaded", function () {
     updateCarousel();
   }
   templateDefaultSlider();
+
+  const swiper = new Swiper(".swiper", {
+    // Optional parameters
+    loop: true,
+    autoplay: {
+      delay: 1000,
+    },
+    // Default parameters
+    slidesPerView: 5,
+    spaceBetween: 200,
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      // when window width is >= 1024px
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      // when window width is >= 1440px
+      1440: {
+        slidesPerView: 5,
+        spaceBetween: 40,
+      },
+    },
+  });
 });

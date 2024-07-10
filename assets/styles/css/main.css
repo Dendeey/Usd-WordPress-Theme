@@ -655,31 +655,31 @@ table {
   background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/Denual_logo.webp);
 }
 .section__partenaires .partenaires__items > a:nth-of-type(11) {
-  background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/Groupama_logo.webp);
+  background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/groupama.png);
 }
 .section__partenaires .partenaires__items > a:nth-of-type(12) {
-  background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/LMConstruction_logo.webp);
+  background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/lmconstruction.png);
 }
 .section__partenaires .partenaires__items > a:nth-of-type(13) {
-  background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/StephanePlaza_logo.webp);
+  background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/stephaneplaza.png);
 }
 .section__partenaires .partenaires__items > a:nth-of-type(14) {
-  background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/Plombreizh_logo.webp);
+  background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/plombreizh.png);
 }
 .section__partenaires .partenaires__items > a:nth-of-type(15) {
-  background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/Motorcraft_logo.png);
+  background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/motorcraft.png);
 }
 .section__partenaires .partenaires__items > a:nth-of-type(16) {
   background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/Safe_logo.webp);
 }
 .section__partenaires .partenaires__items > a:nth-of-type(17) {
-  background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/SuperU_logo.webp);
+  background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/superu.png);
 }
 .section__partenaires .partenaires__items > a:nth-of-type(18) {
-  background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/T&C_logo.webp);
+  background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/t&c.png);
 }
 .section__partenaires .partenaires__items > a:nth-of-type(19) {
-  background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/Tiriault_logo.webp);
+  background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/tiriault.png);
 }
 .section__partenaires .partenaires__items > a:nth-of-type(20) {
   background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/Crit_logo.webp);
@@ -691,7 +691,7 @@ table {
   background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/LeComptoir_logo.webp);
 }
 .section__partenaires .partenaires__items > a:last-of-type {
-  background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/VousFinancer_logo.webp);
+  background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/vousfinancer.png);
 }
 
 @media screen and (max-width: 767px) {
@@ -701,6 +701,41 @@ table {
     background-size: 7rem auto;
   }
 }
+.swiper-slider {
+  background-color: #f7f7f7;
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+}
+.swiper-slider .title__partenaires {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #034076;
+  border-bottom: solid 3px #FDCD11;
+}
+.swiper-slider .swiper {
+  max-width: 75vw;
+  height: 100%;
+}
+.swiper-slider .swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slider .swiper .swiper-wrapper .swiper-slide .swiper-sponsor {
+  width: 15rem;
+  height: auto;
+  object-fit: cover;
+}
+
 .site__footer {
   width: 100vw;
   padding-top: 2rem;
