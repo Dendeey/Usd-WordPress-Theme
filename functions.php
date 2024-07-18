@@ -40,6 +40,7 @@ register_nav_menus(array(
     'main' => 'Menu Principal',
     'burger-club_dropdown' => 'Menu Club deroulant ',
     'burger-equipes_dropdown' => 'Menu Equipes deroulant',
+    'burger-licences_dropdown' => 'Menu Licences deroulant',
     'burger-menu' => 'Menu Burger',
     'footer-menu' => 'Menu bas de page',
     'footer' => 'Bas de page',

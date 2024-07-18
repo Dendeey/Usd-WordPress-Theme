@@ -52,13 +52,13 @@
                 <nav class="top__header__burger__nav">
                     <ul>
                         <li>
-                            <div id="title__arrow__top" class="title__dropdown__arrow">
+                            <div id="title__arrow__club" class="title__dropdown__arrow">
                                 <span>le club</span>
                                 <div>
-                                    <i id="arrow__top" class="fa-solid fa-angle-down"></i>
+                                    <i id="arrow__club" class="fa-solid fa-angle-down"></i>
                                 </div>
                             </div>
-                            <div id="content__dropdown__top" class="content__dropdown content__dropdown__hidden">
+                            <div id="content__dropdown__club" class="content__dropdown content__dropdown__hidden">
                                 <?php wp_nav_menu(array(
                                     'theme_location' => 'burger-club_dropdown',
                                     'container' => 'ul', // afin d'éviter d'avoir une div autour 
@@ -67,13 +67,13 @@
                             </div>
                         </li>
                         <li>
-                            <div id="title__arrow__bottom" class="title__dropdown__arrow">
+                            <div id="title__arrow__equipes" class="title__dropdown__arrow">
                                 <span>nos équipes</span>
                                 <div>
-                                    <i id="arrow__bottom" class="fa-solid fa-angle-down"></i>
+                                    <i id="arrow__equipes" class="fa-solid fa-angle-down"></i>
                                 </div>
                             </div>
-                            <div id="content__dropdown__bottom" class="content__dropdown content__dropdown__hidden">
+                            <div id="content__dropdown__equipes" class="content__dropdown content__dropdown__hidden">
                                 <?php wp_nav_menu(array(
                                     'theme_location' => 'burger-equipes_dropdown',
                                     'container' => 'ul', // afin d'éviter d'avoir une div autour 
@@ -87,6 +87,21 @@
                             'container' => false, // afin d'éviter d'avoir une div autour 
                             'menu_class' => 'burger__menu', // ma classe personnalisée  
                         )); ?>
+                        <li>
+                            <div id="title__arrow__licences" class="title__dropdown__arrow">
+                                <span>licences</span>
+                                <div>
+                                    <i id="arrow__licences" class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+                            <div id="content__dropdown__licences" class="content__dropdown content__dropdown__hidden">
+                                <?php wp_nav_menu(array(
+                                    'theme_location' => 'burger-licences_dropdown',
+                                    'container' => 'ul', // afin d'éviter d'avoir une div autour 
+                                    'menu_class' => 'burger__licences', // ma classe personnalisée  
+                                )); ?>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
             </div>

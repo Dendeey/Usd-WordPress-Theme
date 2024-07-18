@@ -1,23 +1,31 @@
 window.addEventListener("DOMContentLoaded", function () {
   //Effet header au défilement
   function headerEffectOnScroll() {
-    window.addEventListener("scroll", function () {
-      var header = document.getElementById("homepage__header");
-      var logo = document.getElementById("site__header__logo");
+    let header = document.getElementById("homepage__header");
+    let logo = document.getElementById("site__header__logo");
+
+    // Fonction pour appliquer l'effet sticky
+    function applyStickyEffect() {
       if (header) {
         header.classList.toggle("sticky", window.scrollY > 0);
         logo.classList.toggle("sticky__logo", window.scrollY > 0);
       }
-    });
+    }
+
+    // Vérifier la position de défilement initiale
+    applyStickyEffect();
+
+    // Ajouter l'événement de défilement
+    window.addEventListener("scroll", applyStickyEffect);
   }
   headerEffectOnScroll();
 
   //Fonction qui permet d'ouvrir le menu burger
   function burgerMenuOnClick() {
-    var menuBtn = document.getElementById("menu__btn");
-    var burgerMenu = document.getElementById("burger__menu");
-    var overlay = document.getElementById("overlay");
-    var burgerMenuBtn = document.getElementById("top__header__burger__icon");
+    let menuBtn = document.getElementById("menu__btn");
+    let burgerMenu = document.getElementById("burger__menu");
+    let overlay = document.getElementById("overlay");
+    let burgerMenuBtn = document.getElementById("top__header__burger__icon");
 
     menuBtn.addEventListener("click", function () {
       burgerMenu.classList.toggle("open");
@@ -28,9 +36,9 @@ window.addEventListener("DOMContentLoaded", function () {
 
     //Au clique sur le document
     document.addEventListener("click", function (event) {
-      var clickInMenuBtn = menuBtn.contains(event.target);
-      var clickInBurgerMenu = burgerMenu.contains(event.target);
-      var clickInBurgerMenuBtn = burgerMenuBtn.contains(event.target);
+      let clickInMenuBtn = menuBtn.contains(event.target);
+      let clickInBurgerMenu = burgerMenu.contains(event.target);
+      let clickInBurgerMenuBtn = burgerMenuBtn.contains(event.target);
       //Si le clique est dans sur le bouton "Burger Menu" ou n'est ni dans le bouton du menu et dans le menu
       if (clickInBurgerMenuBtn || (!clickInMenuBtn && !clickInBurgerMenu)) {
         burgerMenu.classList.remove("open");
@@ -42,24 +50,40 @@ window.addEventListener("DOMContentLoaded", function () {
 
   //Fonction qui permet d'ouvrir les sous-menus
   function dropdownBurgerMenu() {
-    var dropdownBtnTop = document.getElementById("title__arrow__top");
-    var arrowTop = document.getElementById("arrow__top");
-    var dropdownContentTop = document.getElementById("content__dropdown__top");
-
-    var dropdownBtnBottom = document.getElementById("title__arrow__bottom");
-    var arrowBottom = document.getElementById("arrow__bottom");
-    var dropdownContentBottom = document.getElementById(
-      "content__dropdown__bottom"
+    let dropdownBtnClub = document.getElementById("title__arrow__club");
+    let arrowClub = document.getElementById("arrow__club");
+    let dropdownContentClub = document.getElementById(
+      "content__dropdown__club"
     );
 
-    dropdownBtnTop.addEventListener("click", function () {
-      toggleDropdown(arrowTop, dropdownContentTop);
-      closeOtherDropdown(arrowBottom, dropdownContentBottom);
+    let dropdownBtnEquipes = document.getElementById("title__arrow__equipes");
+    let arrowEquipes = document.getElementById("arrow__equipes");
+    let dropdownContentEquipes = document.getElementById(
+      "content__dropdown__equipes"
+    );
+
+    let dropdownBtnLicences = document.getElementById("title__arrow__licences");
+    let arrowLicences = document.getElementById("arrow__licences");
+    let dropdownContentLicences = document.getElementById(
+      "content__dropdown__licences"
+    );
+
+    dropdownBtnClub.addEventListener("click", function () {
+      toggleDropdown(arrowClub, dropdownContentClub);
+      closeOtherDropdown(arrowEquipes, dropdownContentEquipes);
+      closeOtherDropdown(arrowLicences, dropdownContentLicences);
     });
 
-    dropdownBtnBottom.addEventListener("click", function () {
-      toggleDropdown(arrowBottom, dropdownContentBottom);
-      closeOtherDropdown(arrowTop, dropdownContentTop);
+    dropdownBtnEquipes.addEventListener("click", function () {
+      toggleDropdown(arrowEquipes, dropdownContentEquipes);
+      closeOtherDropdown(arrowClub, dropdownContentClub);
+      closeOtherDropdown(arrowLicences, dropdownContentLicences);
+    });
+
+    dropdownBtnLicences.addEventListener("click", function () {
+      toggleDropdown(arrowLicences, dropdownContentLicences);
+      closeOtherDropdown(arrowClub, dropdownContentClub);
+      closeOtherDropdown(arrowEquipes, dropdownContentEquipes);
     });
 
     function toggleDropdown(arrow, content) {
@@ -132,11 +156,24 @@ window.addEventListener("DOMContentLoaded", function () {
   }
   scrollToAnchorLink();
 
-  //Function carousel vertical
+  //Function carousel template default
   function templateDefaultSlider() {
     const slides = document.querySelectorAll(".illustration__template");
     const prevBtn = document.getElementById("prev-button");
     const nextBtn = document.getElementById("next-button");
+
+    if (slides.length === 0) {
+      console.warn("No slides found with class .illustration__template");
+      return;
+    }
+
+    if (!prevBtn) {
+      console.warn("Previous button not found with id #prev-button");
+    }
+
+    if (!nextBtn) {
+      console.warn("Next button not found with id #next-button");
+    }
 
     let currentIndex = 0;
 
@@ -155,73 +192,80 @@ window.addEventListener("DOMContentLoaded", function () {
 
       // Masquer les boutons de pagination si un seul élément est présent
       if (slides.length <= 1) {
-        prevBtn.style.display = "none";
-        nextBtn.style.display = "none";
+        if (prevBtn) prevBtn.style.display = "none";
+        if (nextBtn) nextBtn.style.display = "none";
       } else {
         // Masquer ou afficher les boutons en fonction de l'index actuel
-        if (currentIndex === 0) {
-          prevBtn.style.display = "none";
-        } else {
-          prevBtn.style.display = "block";
+        if (prevBtn) {
+          prevBtn.style.display = currentIndex === 0 ? "none" : "block";
         }
 
-        if (currentIndex === slides.length - 1) {
-          nextBtn.style.display = "none";
-        } else {
-          nextBtn.style.display = "block";
+        if (nextBtn) {
+          nextBtn.style.display =
+            currentIndex === slides.length - 1 ? "none" : "block";
         }
       }
     }
 
-    prevBtn.addEventListener("click", () => {
-      if (currentIndex > 0) {
-        currentIndex--;
-        updateCarousel();
-      }
-    });
+    if (prevBtn) {
+      prevBtn.addEventListener("click", () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateCarousel();
+        }
+      });
+    }
 
-    nextBtn.addEventListener("click", () => {
-      if (currentIndex < slides.length - 1) {
-        currentIndex++;
-        updateCarousel();
-      }
-    });
+    if (nextBtn) {
+      nextBtn.addEventListener("click", () => {
+        if (currentIndex < slides.length - 1) {
+          currentIndex++;
+          updateCarousel();
+        }
+      });
+    }
 
     updateCarousel();
   }
+
+  document.addEventListener("DOMContentLoaded", templateDefaultSlider);
+
   templateDefaultSlider();
 
-  const swiper = new Swiper(".swiper", {
-    // Optional parameters
-    loop: true,
-    autoplay: {
-      delay: 1000,
-    },
-    // Default parameters
-    slidesPerView: 5,
-    spaceBetween: 200,
-    // Responsive breakpoints
-    breakpoints: {
-      // when window width is >= 320px
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20,
+  function swiperSlider() {
+    const swiper = new Swiper(".swiper", {
+      // Optional parameters
+      loop: true,
+      autoplay: {
+        delay: 1000,
       },
-      // when window width is >= 768px
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 30,
+      // Default parameters
+      slidesPerView: 5,
+      spaceBetween: 200,
+      // Responsive breakpoints
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        // when window width is >= 768px
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        // when window width is >= 1024px
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        // when window width is >= 1440px
+        1440: {
+          slidesPerView: 5,
+          spaceBetween: 40,
+        },
       },
-      // when window width is >= 1024px
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 40,
-      },
-      // when window width is >= 1440px
-      1440: {
-        slidesPerView: 5,
-        spaceBetween: 40,
-      },
-    },
-  });
+    });
+  }
+  swiperSlider();
 });
