@@ -7,34 +7,34 @@ get_header();
 <main class="main__all__pages">
   <div class="template-default__container__behavior">
     <section class="left__section__image">
-      <section class="container__pagination">
-        <button id="prev-button" class="button_pagination"><i class="fa-solid fa-chevron-left fa-xl"></i></button>
-        <button id="next-button" class="button_pagination"><i class="fa-solid fa-chevron-right fa-xl"></i></button>
-      </section>
       <?php
       $data = getClubPageData();
       ?>
-      <figure class="illustration__template">
+      <div class="swiper-wrapper">
         <?php if (is_array($data) && isset($data['club']['image-illustration1']['url']) && isset($data['club']['image-illustration1']['title'])) { ?>
-          <img src="<?php echo $data['club']['image-illustration1']['url'] ?>" alt="<?php echo $data['club']['image-illustration1']['title'] ?>">
+          <div class="swiper-slide">
+            <img src="<?php echo $data['club']['image-illustration1']['url'] ?>" alt="<?php echo $data['club']['image-illustration1']['title'] ?>">
+          </div>
         <?php } ?>
-      </figure>
-      <?php if (is_array($data) && isset($data['club']['image-illustration2']['url']) && isset($data['club']['image-illustration2']['title'])) { ?>
-        <figure class="illustration__template">
-          <img src="<?php echo $data['club']['image-illustration2']['url'] ?>" alt="<?php echo $data['club']['image-illustration2']['title'] ?>">
-        </figure>
-      <?php } ?>
-      <?php if (is_array($data) && isset($data['club']['image-illustration3']['url']) && isset($data['club']['image-illustration3']['title'])) { ?>
-        <figure class="illustration__template">
-          <img src="<?php echo $data['club']['image-illustration3']['url'] ?>" alt="<?php echo $data['club']['image-illustration3']['title'] ?>">
-        </figure>
-      <?php } ?>
-      <?php if (is_array($data) && isset($data['club']['image-illustration4']['url']) && isset($data['club']['image-illustration4']['title'])) { ?>
-        <figure class="illustration__template">
-          <img src="<?php echo $data['club']['image-illustration4']['url'] ?>" alt="<?php echo $data['club']['image-illustration4']['title'] ?>">
-        </figure>
-      <?php } ?>
-
+        <?php if (is_array($data) && isset($data['club']['image-illustration2']['url']) && isset($data['club']['image-illustration2']['title'])) { ?>
+          <div class="swiper-slide">
+            <img src="<?php echo $data['club']['image-illustration2']['url'] ?>" alt="<?php echo $data['club']['image-illustration2']['title'] ?>">
+          </div>
+        <?php } ?>
+        <?php if (is_array($data) && isset($data['club']['image-illustration3']['url']) && isset($data['club']['image-illustration3']['title'])) { ?>
+          <div class="swiper-slide">
+            <img src="<?php echo $data['club']['image-illustration3']['url'] ?>" alt="<?php echo $data['club']['image-illustration3']['title'] ?>">
+          </div>
+        <?php } ?>
+        <?php if (is_array($data) && isset($data['club']['image-illustration4']['url']) && isset($data['club']['image-illustration4']['title'])) { ?>
+          <div class="swiper-slide">
+            <img src="<?php echo $data['club']['image-illustration4']['url'] ?>" alt="<?php echo $data['club']['image-illustration4']['title'] ?>">
+          </div>
+        <?php } ?>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </section>
     <section class="right__section__content">
       <div class="right__section__container">

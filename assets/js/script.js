@@ -156,83 +156,8 @@ window.addEventListener("DOMContentLoaded", function () {
   }
   scrollToAnchorLink();
 
-  //Function carousel template default
-  function templateDefaultSlider() {
-    const slides = document.querySelectorAll(".illustration__template");
-    const prevBtn = document.getElementById("prev-button");
-    const nextBtn = document.getElementById("next-button");
-
-    if (slides.length === 0) {
-      console.warn("No slides found with class .illustration__template");
-      return;
-    }
-
-    if (!prevBtn) {
-      console.warn("Previous button not found with id #prev-button");
-    }
-
-    if (!nextBtn) {
-      console.warn("Next button not found with id #next-button");
-    }
-
-    let currentIndex = 0;
-
-    function updateCarousel() {
-      for (let index = 0; index < slides.length; index++) {
-        const slide = slides[index];
-
-        if (index === currentIndex) {
-          slide.style.transform = `translateX(0)`;
-        } else if (index < currentIndex) {
-          slide.style.transform = `translateX(-100%)`;
-        } else {
-          slide.style.transform = `translateX(100%)`;
-        }
-      }
-
-      // Masquer les boutons de pagination si un seul élément est présent
-      if (slides.length <= 1) {
-        if (prevBtn) prevBtn.style.display = "none";
-        if (nextBtn) nextBtn.style.display = "none";
-      } else {
-        // Masquer ou afficher les boutons en fonction de l'index actuel
-        if (prevBtn) {
-          prevBtn.style.display = currentIndex === 0 ? "none" : "block";
-        }
-
-        if (nextBtn) {
-          nextBtn.style.display =
-            currentIndex === slides.length - 1 ? "none" : "block";
-        }
-      }
-    }
-
-    if (prevBtn) {
-      prevBtn.addEventListener("click", () => {
-        if (currentIndex > 0) {
-          currentIndex--;
-          updateCarousel();
-        }
-      });
-    }
-
-    if (nextBtn) {
-      nextBtn.addEventListener("click", () => {
-        if (currentIndex < slides.length - 1) {
-          currentIndex++;
-          updateCarousel();
-        }
-      });
-    }
-
-    updateCarousel();
-  }
-
-  document.addEventListener("DOMContentLoaded", templateDefaultSlider);
-
-  templateDefaultSlider();
-
-  function swiperSlider() {
+  //Footer swiper slider
+  function footerSponsorSlider() {
     const swiper = new Swiper(".swiper", {
       // Optional parameters
       loop: true,
@@ -267,5 +192,25 @@ window.addEventListener("DOMContentLoaded", function () {
       },
     });
   }
-  swiperSlider();
+  footerSponsorSlider();
+
+  //Template default left section swiper slider
+  function templateDefaultSlider() {
+    const swiper = new Swiper(".left__section__image", {
+      // Optional parameters
+      loop: false,
+
+      // If we need pagination
+      pagination: {
+        el: ".left__section__image .swiper-pagination",
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".left__section__image .swiper-button-next",
+        prevEl: ".left__section__image .swiper-button-prev",
+      },
+    });
+  }
+  templateDefaultSlider();
 });

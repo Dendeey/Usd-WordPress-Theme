@@ -5,61 +5,39 @@
   top: 0;
   overflow: hidden;
 
-  .container__pagination {
-    top: 50%;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-
-    .button_pagination {
-      border: none;
-      border-radius: 100%;
-      background: white;
-      color: $mainBlue;
-      padding: 0.5rem;
-      height: 2.5rem;
-      width: 2.5rem;
-      cursor: pointer;
-      position: absolute;
-    }
-
-    .button_pagination:hover {
-      background: $mainYellow;
-      color: white;
-    }
-
-    & > button:first-of-type {
-      left: 1.5rem;
-    }
-
-    & > button:last-of-type {
-      right: 1.5rem;
-    }
-  }
-
-  & > figure {
-    position: absolute;
-    top: 0;
-    left: 0;
+  .swiper-wrapper {
     width: 100%;
     height: 100%;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    & > img {
+    .swiper-slide {
       width: 100%;
-      height: 100vh;
-      object-fit: cover;
-      box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
-    }
-    & > picture {
+      height: 100%;
+
       & > img {
         width: 100%;
-        height: 100vh;
+        height: 100%;
         object-fit: cover;
         box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
       }
+
+      & > picture {
+        & > img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+        }
+      }
     }
+  }
+
+  .swiper-pagination-bullet {
+    background: white;
+  }
+  .swiper-button-prev {
+    color: white;
+  }
+  .swiper-button-next {
+    color: white;
   }
 }
 
@@ -338,10 +316,6 @@
     width: 100%;
     height: 60vh;
     position: relative;
-
-    .container__pagination {
-      top: 80%;
-    }
 
     & > figure {
       & > img {

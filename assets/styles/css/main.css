@@ -505,42 +505,56 @@ table {
 }
 
 .event {
-  height: 150px;
+  height: 125px;
   width: 100%;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.1);
   background-image: linear-gradient(to right, #034076 100%, #FDCD11);
   display: flex;
   flex-direction: row;
+  justify-content: center;
   border-radius: 5px;
+  border-right: solid 4px #FDCD11;
+  overflow: hidden;
 }
-.event .event-img {
-  width: 40%;
+.event .event-img-container {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #FDCD11;
+}
+.event .event-img-container .event-img {
+  width: 100%;
+  height: 100%;
   border-radius: 5px 0 0 5px;
   object-fit: cover;
 }
 .event .event-text {
-  padding-left: 32px;
-  width: 100%;
-  display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .event .event-text > h2 {
   font-size: 24px;
   color: white;
   font-weight: bold;
-  padding: 8px 0 16px 0;
+  padding-top: 4px;
 }
 .event .event-text > p {
   font-size: 16px;
   color: white;
+  text-align: center;
 }
 .event .event-text .price {
-  font-size: 20px;
+  font-size: 16px;
   color: #FDCD11;
   justify-self: center;
   font-weight: bold;
-  padding-bottom: 8px;
+  padding-bottom: 4px;
 }
 
 .fullscreen__carousel-container {
@@ -1447,54 +1461,34 @@ table {
   top: 0;
   overflow: hidden;
 }
-.left__section__image .container__pagination {
-  top: 50%;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  position: absolute;
-  z-index: 2;
-}
-.left__section__image .container__pagination .button_pagination {
-  border: none;
-  border-radius: 100%;
-  background: white;
-  color: #034076;
-  padding: 0.5rem;
-  height: 2.5rem;
-  width: 2.5rem;
-  cursor: pointer;
-  position: absolute;
-}
-.left__section__image .container__pagination .button_pagination:hover {
-  background: #FDCD11;
-  color: white;
-}
-.left__section__image .container__pagination > button:first-of-type {
-  left: 1.5rem;
-}
-.left__section__image .container__pagination > button:last-of-type {
-  right: 1.5rem;
-}
-.left__section__image > figure {
-  position: absolute;
-  top: 0;
-  left: 0;
+.left__section__image .swiper-wrapper {
   width: 100%;
   height: 100%;
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
-.left__section__image > figure > img {
+.left__section__image .swiper-wrapper .swiper-slide {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+}
+.left__section__image .swiper-wrapper .swiper-slide > img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
-.left__section__image > figure > picture > img {
+.left__section__image .swiper-wrapper .swiper-slide > picture > img {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   object-fit: cover;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+.left__section__image .swiper-pagination-bullet {
+  background: white;
+}
+.left__section__image .swiper-button-prev {
+  color: white;
+}
+.left__section__image .swiper-button-next {
+  color: white;
 }
 
 .right__section__content {
@@ -1723,9 +1717,6 @@ table {
     width: 100%;
     height: 60vh;
     position: relative;
-  }
-  .left__section__image .container__pagination {
-    top: 80%;
   }
   .left__section__image > figure > img {
     width: 100%;

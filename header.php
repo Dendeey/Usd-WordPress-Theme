@@ -82,11 +82,6 @@
                             </div>
 
                         </li>
-                        <?php wp_nav_menu(array(
-                            'theme_location' => 'burger-menu',
-                            'container' => false, // afin d'éviter d'avoir une div autour 
-                            'menu_class' => 'burger__menu', // ma classe personnalisée  
-                        )); ?>
                         <li>
                             <div id="title__arrow__licences" class="title__dropdown__arrow">
                                 <span>licences</span>
@@ -102,6 +97,12 @@
                                 )); ?>
                             </div>
                         </li>
+                        <?php wp_nav_menu(array(
+                            'theme_location' => 'burger-menu',
+                            'container' => false, // afin d'éviter d'avoir une div autour 
+                            'menu_class' => 'burger__menu', // ma classe personnalisée  
+                        )); ?>
+
                     </ul>
                 </nav>
             </div>
