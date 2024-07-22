@@ -289,3 +289,221 @@ function derniers_articles()
 
     wp_reset_postdata();
 }
+
+function eventData()
+{
+    $eventData = [];
+    $eventData["event"] = [];
+    $eventData["event"]["imgEvent1"] = get_field("image_evenement_1");
+    $eventData["event"]["titreEvent1"] = get_field("titre_evenement_1");
+    $eventData["event"]["descriptionEvent1"] = get_field("description_evenement_1");
+    $eventData["event"]["prixEvent1"] = get_field("prix_evenement_1");
+    $eventData["event"]["imgEvent2"] = get_field("image_evenement_2");
+    $eventData["event"]["titreEvent2"] = get_field("titre_evenement_2");
+    $eventData["event"]["descriptionEvent2"] = get_field("description_evenement_2");
+    $eventData["event"]["prixEvent2"] = get_field("prix_evenement_2");
+    $eventData["event"]["imgEvent3"] = get_field("image_evenement_3");
+    $eventData["event"]["titreEvent3"] = get_field("titre_evenement_3");
+    $eventData["event"]["descriptionEvent3"] = get_field("description_evenement_3");
+    $eventData["event"]["prixEvent3"] = get_field("prix_evenement_3");
+    $eventData["event"]["imgEvent4"] = get_field("image_evenement_4");
+    $eventData["event"]["titreEvent4"] = get_field("titre_evenement_4");
+    $eventData["event"]["descriptionEvent4"] = get_field("description_evenement_4");
+    $eventData["event"]["prixEvent4"] = get_field("prix_evenement_4");
+    $eventData["event"]["imgEvent5"] = get_field("image_evenement_5");
+    $eventData["event"]["titreEvent5"] = get_field("titre_evenement_5");
+    $eventData["event"]["descriptionEvent5"] = get_field("description_evenement_5");
+    $eventData["event"]["prixEvent5"] = get_field("prix_evenement_5");
+    $eventData["event"]["imgEvent6"] = get_field("image_evenement_6");
+    $eventData["event"]["titreEvent6"] = get_field("titre_evenement_6");
+    $eventData["event"]["descriptionEvent6"] = get_field("description_evenement_6");
+    $eventData["event"]["prixEvent6"] = get_field("prix_evenement_6");
+
+    return $eventData;
+}
+
+function eventOne()
+{
+    $eventOne = eventData();
+
+    $img = isset($eventOne["event"]["imgEvent1"]) && is_array($eventOne["event"]["imgEvent1"])
+        ? esc_url($eventOne["event"]["imgEvent1"]["url"])
+        : '';
+
+    $titre = isset($eventOne["event"]["titreEvent1"]) ? esc_html($eventOne["event"]["titreEvent1"]) : '';
+    $description = isset($eventOne["event"]["descriptionEvent1"]) ? esc_html($eventOne["event"]["descriptionEvent1"]) : '';
+    $prix = isset($eventOne["event"]["prixEvent1"]) ? esc_html($eventOne["event"]["prixEvent1"]) : '';
+
+    if ($img || $titre || $description || $prix) {
+        return ' 
+        <section class="event">
+        <figure class="event-img-container">
+            <img class="event-img" src="' . esc_url($img) . '" alt="Événement 1" />
+        </figure>
+        <section class="event-text">
+            <h2>' . esc_html($titre) . '</h2>
+            <p>' . esc_html($description) . '</p>
+            <span class="price">' . esc_html($prix) . '</span>
+        </section>
+    </section>
+      ';
+    } else {
+        return '';
+    }
+}
+add_shortcode('evenement_1', 'eventOne');
+
+function eventTwo()
+{
+    $eventTwo = eventData();
+
+    $img = isset($eventTwo["event"]["imgEvent2"]) && is_array($eventTwo["event"]["imgEvent2"])
+        ? esc_url($eventTwo["event"]["imgEvent2"]["url"])
+        : '';
+
+    $titre = isset($eventTwo["event"]["titreEvent2"]) ? esc_html($eventTwo["event"]["titreEvent2"]) : '';
+    $description = isset($eventTwo["event"]["descriptionEvent2"]) ? esc_html($eventTwo["event"]["descriptionEvent2"]) : '';
+    $prix = isset($eventTwo["event"]["prixEvent2"]) ? esc_html($eventTwo["event"]["prixEvent2"]) : '';
+
+    if ($img || $titre || $description || $prix) {
+        return ' 
+        <section class="event">
+        <figure class="event-img-container">
+            <img class="event-img" src="' . esc_url($img) . '" alt="Événement 2" />
+        </figure>
+        <section class="event-text">
+            <h2>' . esc_html($titre) . '</h2>
+            <p>' . esc_html($description) . '</p>
+            <span class="price">' . esc_html($prix) . '</span>
+        </section>
+    </section>
+      ';
+    } else {
+        return '';
+    }
+}
+add_shortcode('evenement_2', 'eventTwo');
+
+function eventThree()
+{
+    $eventThree = eventData();
+
+    $img = isset($eventThree["event"]["imgEvent3"]) && is_array($eventThree["event"]["imgEvent3"])
+        ? esc_url($eventThree["event"]["imgEvent3"]["url"])
+        : '';
+
+    $titre = isset($eventThree["event"]["titreEvent3"]) ? esc_html($eventThree["event"]["titreEvent3"]) : '';
+    $description = isset($eventThree["event"]["descriptionEvent3"]) ? esc_html($eventThree["event"]["descriptionEvent3"]) : '';
+    $prix = isset($eventThree["event"]["prixEvent3"]) ? esc_html($eventThree["event"]["prixEvent3"]) : '';
+
+    if ($img || $titre || $description || $prix) {
+        return ' 
+        <section class="event">
+        <figure class="event-img-container">
+            <img class="event-img" src="' . esc_url($img) . '" alt="Événement 3" />
+        </figure>
+        <section class="event-text">
+            <h2>' . esc_html($titre) . '</h2>
+            <p>' . esc_html($description) . '</p>
+            <span class="price">' . esc_html($prix) . '</span>
+        </section>
+    </section>
+      ';
+    } else {
+        return '';
+    }
+}
+add_shortcode('evenement_3', 'eventThree');
+
+function eventFour()
+{
+    $eventFour = eventData();
+
+    $img = isset($eventFour["event"]["imgEvent4"]) && is_array($eventFour["event"]["imgEvent4"])
+        ? esc_url($eventFour["event"]["imgEvent4"]["url"])
+        : '';
+
+    $titre = isset($eventFour["event"]["titreEvent4"]) ? esc_html($eventFour["event"]["titreEvent4"]) : '';
+    $description = isset($eventFour["event"]["descriptionEvent4"]) ? esc_html($eventFour["event"]["descriptionEvent4"]) : '';
+    $prix = isset($eventFour["event"]["prixEvent4"]) ? esc_html($eventFour["event"]["prixEvent4"]) : '';
+
+    if ($img || $titre || $description || $prix) {
+        return ' 
+        <section class="event">
+        <figure class="event-img-container">
+            <img class="event-img" src="' . esc_url($img) . '" alt="Événement 4" />
+        </figure>
+        <section class="event-text">
+            <h2>' . esc_html($titre) . '</h2>
+            <p>' . esc_html($description) . '</p>
+            <span class="price">' . esc_html($prix) . '</span>
+        </section>
+    </section>
+      ';
+    } else {
+        return '';
+    }
+}
+add_shortcode('evenement_4', 'eventFour');
+
+function eventFive()
+{
+    $eventFive = eventData();
+
+    $img = isset($eventFive["event"]["imgEvent5"]) && is_array($eventFive["event"]["imgEvent5"])
+        ? esc_url($eventFive["event"]["imgEvent5"]["url"])
+        : '';
+
+    $titre = isset($eventFive["event"]["titreEvent5"]) ? esc_html($eventFive["event"]["titreEvent5"]) : '';
+    $description = isset($eventFive["event"]["descriptionEvent5"]) ? esc_html($eventFive["event"]["descriptionEvent5"]) : '';
+    $prix = isset($eventFive["event"]["prixEvent5"]) ? esc_html($eventFive["event"]["prixEvent5"]) : '';
+
+    if ($img || $titre || $description || $prix) {
+        return ' 
+        <section class="event">
+        <figure class="event-img-container">
+            <img class="event-img" src="' . esc_url($img) . '" alt="Événement 5" />
+        </figure>
+        <section class="event-text">
+            <h2>' . esc_html($titre) . '</h2>
+            <p>' . esc_html($description) . '</p>
+            <span class="price">' . esc_html($prix) . '</span>
+        </section>
+    </section>
+      ';
+    } else {
+        return '';
+    }
+}
+add_shortcode('evenement_5', 'eventFive');
+
+function eventSix()
+{
+    $eventSix = eventData();
+
+    $img = isset($eventSix["event"]["imgEvent6"]) && is_array($eventSix["event"]["imgEvent6"])
+        ? esc_url($eventSix["event"]["imgEvent6"]["url"])
+        : '';
+
+    $titre = isset($eventSix["event"]["titreEvent6"]) ? esc_html($eventSix["event"]["titreEvent6"]) : '';
+    $description = isset($eventSix["event"]["descriptionEvent6"]) ? esc_html($eventSix["event"]["descriptionEvent6"]) : '';
+    $prix = isset($eventSix["event"]["prixEvent6"]) ? esc_html($eventSix["event"]["prixEvent6"]) : '';
+
+    if ($img || $titre || $description || $prix) {
+        return ' 
+        <section class="event">
+        <figure class="event-img-container">
+            <img class="event-img" src="' . esc_url($img) . '" alt="Événement 6" />
+        </figure>
+        <section class="event-text">
+            <h2>' . esc_html($titre) . '</h2>
+            <p>' . esc_html($description) . '</p>
+            <span class="price">' . esc_html($prix) . '</span>
+        </section>
+    </section>
+      ';
+    } else {
+        return '';
+    }
+}
+add_shortcode('evenement_6', 'eventSix');
