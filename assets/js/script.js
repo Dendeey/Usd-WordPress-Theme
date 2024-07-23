@@ -26,12 +26,24 @@ window.addEventListener("DOMContentLoaded", function () {
     let burgerMenu = document.getElementById("burger__menu");
     let overlay = document.getElementById("overlay");
     let burgerMenuBtn = document.getElementById("top__header__burger__icon");
+    let anchorCrBtn = document.getElementById("container-anchor-cr");
+    let anchorEventsBtn = document.getElementById("container-anchor-events");
 
     menuBtn.addEventListener("click", function () {
       burgerMenu.classList.toggle("open");
       if (overlay.style.display === "none" || overlay.style.display === "") {
         overlay.style.display = "block";
       }
+    });
+
+    anchorCrBtn.addEventListener("click", function () {
+      burgerMenu.classList.toggle("open");
+      overlay.style.display = "none";
+    });
+
+    anchorEventsBtn.addEventListener("click", function () {
+      burgerMenu.classList.toggle("open");
+      overlay.style.display = "none";
     });
 
     //Au clique sur le document

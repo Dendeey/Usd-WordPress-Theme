@@ -33,6 +33,10 @@
             <img class="header__logo__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_usd.png" alt="Logo">
         </a>
         <div class="header__social__media">
+            <div class="header__anchors">
+                <a href="https://usdomagne-wordpress-theme.local/#section-classement-resultats" class="btnAnchor">Classement & Résultats</a>
+                <a href="https://usdomagne-wordpress-theme.local/#section-evenements" class="btnAnchor">évènements</a>
+            </div>
             <ul class="header__social__media__list">
                 <li class="header__social__media__list__item"><a id="insta__icon" class="header__social__media__list__item__link" href="https://www.instagram.com/usdomagne/" target="_blank"><i class="fa-brands fa-square-instagram fa-2xl"></i></a></li>
                 <li class="header__social__media__list__item"><a id="fb__icon" class="header__social__media__list__item__link" href="https://www.facebook.com/usdomagne?locale=fr_FR" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl"></i></a></li>
@@ -113,11 +117,18 @@
                         <li class="header__burger__social__media__list__item"><a id="fb__icon" class="header__burger__social__media__list__item__link" href="https://www.facebook.com/usdomagne?locale=fr_FR" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl"></i></a></li>
                     </ul>
                 </div>
+                <div id="container-anchor-cr" class="containerAnchorLink">
+                    <a href="https://usdomagne-wordpress-theme.local/#section-classement-resultats" class="anchorLink">Classement & Résultats</a>
+                </div>
+                <div id="container-anchor-events" class="containerAnchorLink">
+                    <a href="https://usdomagne-wordpress-theme.local/#section-evenements" class="anchorLink">évènements</a>
+                </div>
                 <?php wp_nav_menu(array(
                     'theme_location' => 'main',
                     'container' => 'ul', // afin d'éviter d'avoir une div autour 
                     'menu_class' => 'header__menu', // ma classe personnalisée  
                 )); ?>
+
             </div>
         </div>
     </header>
