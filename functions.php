@@ -61,13 +61,13 @@ function getClubPageData()
     $data['club']['image-illustration2'] = get_field('image_illustration2');
     $data['club']['image-illustration3'] = get_field('image_illustration3');
     $data['club']['image-illustration4'] = get_field('image_illustration4');
-    $data['club']['titre'] = get_field('titre_principal', false, false);
+    $data['club']['titre'] = esc_html(get_field('titre_principal', false, false));
     $data['club']['navigation'] = get_field('menu_de_navigation', false, false);
     $data['club']['image1'] = get_field('image_1');
     $data['club']['image2'] = get_field('image_2');
     $data['club']['contenu-principal'] = get_field('contenu_principal');
     $data['club']['carrousel'] = get_field('carrousel_images', false, false);
-    $data['club']['contenu-secondaire'] = get_field('contenu_secondaire');
+    $data['club']['contenu-secondaire'] = esc_html(get_field('contenu_secondaire'));
     $data['club']['contenu-embarque'] = get_field('contenu_embarque');
 
     return $data;
@@ -235,9 +235,9 @@ function getTemplateDefaultBisData()
     $dataBis['bis'] = [];
 
     $dataBis['bis']['mainPicture'] = get_field('image_illustration_page');
-    $dataBis['bis']['title1'] = get_field('titre_1');
+    $dataBis['bis']['title1'] = esc_html(get_field('titre_1'));
     $dataBis['bis']['gallery1'] = get_field('galerie_1', false, false);
-    $dataBis['bis']['title2'] = get_field('titre_2');
+    $dataBis['bis']['title2'] = esc_html(get_field('titre_2'));
     $dataBis['bis']['gallery2'] = get_field('galerie_2', false, false);
     $dataBis['bis']['commonContent'] = get_field('contenu_general');
     $dataBis['bis']['convocs'] = get_field('convocations');
@@ -275,7 +275,7 @@ function derniers_articles()
                             <p class="post__meta">
                                 Publié le ' . get_the_time(get_option('date_format')) . '
                             </p>
-                            <h2>' . get_the_title() . '</h2>
+                            <h2>' . esc_html(get_the_title()) . '</h2>
                         </div>
                         <span class="post__border__bottom"></span>
                     </article>
@@ -295,29 +295,29 @@ function eventData()
     $eventData = [];
     $eventData["event"] = [];
     $eventData["event"]["imgEvent1"] = get_field("image_evenement_1");
-    $eventData["event"]["titreEvent1"] = get_field("titre_evenement_1");
-    $eventData["event"]["descriptionEvent1"] = get_field("description_evenement_1");
-    $eventData["event"]["prixEvent1"] = get_field("prix_evenement_1");
+    $eventData["event"]["titreEvent1"] = esc_html(get_field("titre_evenement_1"));
+    $eventData["event"]["descriptionEvent1"] = esc_html(get_field("description_evenement_1"));
+    $eventData["event"]["prixEvent1"] = esc_html(get_field("prix_evenement_1"));
     $eventData["event"]["imgEvent2"] = get_field("image_evenement_2");
-    $eventData["event"]["titreEvent2"] = get_field("titre_evenement_2");
-    $eventData["event"]["descriptionEvent2"] = get_field("description_evenement_2");
-    $eventData["event"]["prixEvent2"] = get_field("prix_evenement_2");
+    $eventData["event"]["titreEvent2"] = esc_html(get_field("titre_evenement_2"));
+    $eventData["event"]["descriptionEvent2"] = esc_html(get_field("description_evenement_2"));
+    $eventData["event"]["prixEvent2"] = esc_html(get_field("prix_evenement_2"));
     $eventData["event"]["imgEvent3"] = get_field("image_evenement_3");
-    $eventData["event"]["titreEvent3"] = get_field("titre_evenement_3");
-    $eventData["event"]["descriptionEvent3"] = get_field("description_evenement_3");
-    $eventData["event"]["prixEvent3"] = get_field("prix_evenement_3");
+    $eventData["event"]["titreEvent3"] = esc_html(get_field("titre_evenement_3"));
+    $eventData["event"]["descriptionEvent3"] = esc_html(get_field("description_evenement_3"));
+    $eventData["event"]["prixEvent3"] = esc_html(get_field("prix_evenement_3"));
     $eventData["event"]["imgEvent4"] = get_field("image_evenement_4");
-    $eventData["event"]["titreEvent4"] = get_field("titre_evenement_4");
-    $eventData["event"]["descriptionEvent4"] = get_field("description_evenement_4");
-    $eventData["event"]["prixEvent4"] = get_field("prix_evenement_4");
+    $eventData["event"]["titreEvent4"] = esc_html(get_field("titre_evenement_4"));
+    $eventData["event"]["descriptionEvent4"] = esc_html(get_field("description_evenement_4"));
+    $eventData["event"]["prixEvent4"] = esc_html(get_field("prix_evenement_4"));
     $eventData["event"]["imgEvent5"] = get_field("image_evenement_5");
-    $eventData["event"]["titreEvent5"] = get_field("titre_evenement_5");
-    $eventData["event"]["descriptionEvent5"] = get_field("description_evenement_5");
-    $eventData["event"]["prixEvent5"] = get_field("prix_evenement_5");
+    $eventData["event"]["titreEvent5"] = esc_html(get_field("titre_evenement_5"));
+    $eventData["event"]["descriptionEvent5"] = esc_html(get_field("description_evenement_5"));
+    $eventData["event"]["prixEvent5"] = esc_html(get_field("prix_evenement_5"));
     $eventData["event"]["imgEvent6"] = get_field("image_evenement_6");
-    $eventData["event"]["titreEvent6"] = get_field("titre_evenement_6");
-    $eventData["event"]["descriptionEvent6"] = get_field("description_evenement_6");
-    $eventData["event"]["prixEvent6"] = get_field("prix_evenement_6");
+    $eventData["event"]["titreEvent6"] = esc_html(get_field("titre_evenement_6"));
+    $eventData["event"]["descriptionEvent6"] = esc_html(get_field("description_evenement_6"));
+    $eventData["event"]["prixEvent6"] = esc_html(get_field("prix_evenement_6"));
 
     return $eventData;
 }
