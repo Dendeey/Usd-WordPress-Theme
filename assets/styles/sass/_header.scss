@@ -81,22 +81,6 @@
     right: 3rem;
     gap: 2.5rem;
 
-    .header__anchors {
-      position: absolute;
-      left: 0;
-      display: flex;
-      gap: 1.5rem;
-      .btnAnchor {
-        text-decoration: none;
-        color: white;
-        font-weight: 700;
-      }
-
-      .btnAnchor:hover {
-        opacity: 0.5;
-      }
-    }
-
     .header__social__media__list {
       display: flex;
       flex-direction: row;
@@ -205,22 +189,6 @@
     position: relative;
     right: 3rem;
 
-    .header__anchors {
-      position: absolute;
-      left: 0;
-      display: flex;
-      gap: 1.5rem;
-      .btnAnchor {
-        text-decoration: none;
-        color: white;
-        font-weight: 700;
-      }
-
-      .btnAnchor:hover {
-        opacity: 0.5;
-      }
-    }
-
     .header__social__media__list {
       display: flex;
       flex-direction: row;
@@ -281,6 +249,22 @@
     }
 
     .top__header__burger__nav {
+      .containerAnchorLink {
+        width: 100%;
+        height: 4rem;
+        .anchorLink {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          padding-left: 2.5rem;
+          font-weight: 700;
+          font-family: "Open Sans", sans-serif;
+          color: white;
+        }
+        .anchorLink:hover {
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+      }
       & > ul {
         display: flex;
         flex-direction: column;
@@ -442,23 +426,6 @@
         }
       }
     }
-
-    .containerAnchorLink {
-      width: 100%;
-      height: 4rem;
-      .anchorLink {
-        display: flex;
-        align-items: center;
-        height: 100%;
-        padding-left: 2.5rem;
-        font-weight: 700;
-        font-family: "Open Sans", sans-serif;
-        color: $mainBlue;
-      }
-      .anchorLink:hover {
-        background-color: rgba(0, 0, 0, 0.1);
-      }
-    }
   }
 }
 
@@ -532,22 +499,11 @@
         display: none;
       }
     }
-
-    .header__social__media {
-      .header__anchors {
-        display: none;
-      }
-    }
   }
 
   .page__header {
     .header__menu__nav {
       .header__menu {
-        display: none;
-      }
-    }
-    .header__social__media {
-      .header__anchors {
         display: none;
       }
     }
@@ -575,9 +531,6 @@
 
     .header__social__media {
       right: 1rem;
-      .header__anchors {
-        display: none;
-      }
     }
   }
 
@@ -592,9 +545,6 @@
 
     .header__social__media {
       right: 1rem;
-      .header__anchors {
-        display: none;
-      }
     }
   }
 

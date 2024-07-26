@@ -80,22 +80,36 @@ window.addEventListener("DOMContentLoaded", function () {
       "content__dropdown__licences"
     );
 
+    let dropdownBtnVie = document.getElementById("title__arrow__vie");
+    let arrowVie = document.getElementById("arrow__vie");
+    let dropdownContentVie = document.getElementById("content__dropdown__vie");
+
     dropdownBtnClub.addEventListener("click", function () {
       toggleDropdown(arrowClub, dropdownContentClub);
       closeOtherDropdown(arrowEquipes, dropdownContentEquipes);
       closeOtherDropdown(arrowLicences, dropdownContentLicences);
+      closeOtherDropdown(arrowVie, dropdownContentVie);
     });
 
     dropdownBtnEquipes.addEventListener("click", function () {
       toggleDropdown(arrowEquipes, dropdownContentEquipes);
       closeOtherDropdown(arrowClub, dropdownContentClub);
       closeOtherDropdown(arrowLicences, dropdownContentLicences);
+      closeOtherDropdown(arrowVie, dropdownContentVie);
     });
 
     dropdownBtnLicences.addEventListener("click", function () {
       toggleDropdown(arrowLicences, dropdownContentLicences);
       closeOtherDropdown(arrowClub, dropdownContentClub);
       closeOtherDropdown(arrowEquipes, dropdownContentEquipes);
+      closeOtherDropdown(arrowVie, dropdownContentVie);
+    });
+
+    dropdownBtnVie.addEventListener("click", function () {
+      toggleDropdown(arrowVie, dropdownContentVie);
+      closeOtherDropdown(arrowClub, dropdownContentClub);
+      closeOtherDropdown(arrowEquipes, dropdownContentEquipes);
+      closeOtherDropdown(arrowLicences, dropdownContentLicences);
     });
 
     function toggleDropdown(arrow, content) {

@@ -33,10 +33,6 @@
             <img class="header__logo__img" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/logo_usd.png" alt="Logo">
         </a>
         <div class="header__social__media">
-            <div class="header__anchors">
-                <a href="<?php esc_url(get_template_directory_uri()); ?>/#section-classement-resultats" class="btnAnchor">Classement & Résultats</a>
-                <a href="<?php esc_url(get_template_directory_uri()); ?>/#section-evenements" class="btnAnchor">évènements</a>
-            </div>
             <ul class="header__social__media__list">
                 <li class="header__social__media__list__item"><a id="insta__icon" class="header__social__media__list__item__link" href="https://www.instagram.com/usdomagne/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-instagram fa-2xl"></i></a></li>
                 <li class="header__social__media__list__item"><a id="fb__icon" class="header__social__media__list__item__link" href="https://www.facebook.com/usdomagne?locale=fr_FR" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook fa-2xl"></i></a></li>
@@ -71,6 +67,21 @@
                             </div>
                         </li>
                         <li>
+                            <div id="title__arrow__vie" class="title__dropdown__arrow">
+                                <span>Vie du club</span>
+                                <div>
+                                    <i id="arrow__vie" class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+                            <div id="content__dropdown__vie" class="content__dropdown content__dropdown__hidden">
+                                <ul>
+                                    <li id="container-anchor-events">
+                                        <a href="<?php esc_url(get_template_directory_uri()); ?>/#section-evenements" class="anchorLink">évènements</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
                             <div id="title__arrow__equipes" class="title__dropdown__arrow">
                                 <span>nos équipes</span>
                                 <div>
@@ -101,6 +112,9 @@
                                 )); ?>
                             </div>
                         </li>
+                        <div id="container-anchor-cr" class="containerAnchorLink">
+                            <a href="<?php esc_url(get_template_directory_uri()); ?>/#section-classement-resultats" class="anchorLink">Classement & Résultats</a>
+                        </div>
                         <?php wp_nav_menu(array(
                             'theme_location' => 'burger-menu',
                             'container' => false, // afin d'éviter d'avoir une div autour 
@@ -116,12 +130,6 @@
                         <li class="header__burger__social__media__list__item"><a id="insta__icon" class="header__burger__social__media__list__item__link" href="https://www.instagram.com/usdomagne/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-instagram fa-2xl"></i></a></li>
                         <li class="header__burger__social__media__list__item"><a id="fb__icon" class="header__burger__social__media__list__item__link" href="https://www.facebook.com/usdomagne?locale=fr_FR" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook fa-2xl"></i></a></li>
                     </ul>
-                </div>
-                <div id="container-anchor-cr" class="containerAnchorLink">
-                    <a href="<?php esc_url(get_template_directory_uri()); ?>/#section-classement-resultats" class="anchorLink">Classement & Résultats</a>
-                </div>
-                <div id="container-anchor-events" class="containerAnchorLink">
-                    <a href="<?php esc_url(get_template_directory_uri()); ?>/#section-evenements" class="anchorLink">évènements</a>
                 </div>
                 <?php wp_nav_menu(array(
                     'theme_location' => 'main',
