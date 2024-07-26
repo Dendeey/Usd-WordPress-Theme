@@ -24,7 +24,7 @@ $dataBis = getTemplateDefaultBisData();
             <nav class="header__template__bis__nav">
                 <ul>
                     <li>
-                        <a href="<?php echo home_url('/'); ?>">Accueil</a>
+                        <a href="<?php echo esc_url(home_url('/')); ?>">Accueil</a>
                     </li>
                     <li>
                         <span><i class="fa-solid fa-minus"></i></span>

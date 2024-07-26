@@ -4,8 +4,8 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta content="<?php echo get_bloginfo('name'); ?>" name="title">
-    <meta content="<?php echo get_bloginfo('description'); ?>" name="description">
+    <meta content="<?php echo esc_attr(get_bloginfo('name')); ?>" name="title">
+    <meta content="<?php echo esc_attr(get_bloginfo('description')); ?>" name="description">
     <meta name="keywords" content="classement, équipe, sport, site officiel, dirigeant de club, joueur, terrain, entraîneur, calendrier, résultat, championnat, coupe, score, entraînement, supporter, US Domagné Saint-Didier">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://unpkg.com/scroll-behavior-polyfill"></script>
     <?php wp_head(); ?>
-    <title><?php echo get_bloginfo('name'); ?></title>
+    <title><?php echo esc_attr(get_bloginfo('name')); ?></title>
 </head>
 
 <body id="site__home" <?php body_class(); ?>>
@@ -29,17 +29,17 @@
                 'menu_class' => 'header__menu', // ma classe personnalisée  
             )); ?>
         </div>
-        <a id="site__header__logo" class="header__logo__link" href="<?php echo home_url('/'); ?>">
-            <img class="header__logo__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_usd.png" alt="Logo">
+        <a id="site__header__logo" class="header__logo__link" href="<?php echo esc_url(home_url('/')); ?>">
+            <img class="header__logo__img" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/logo_usd.png" alt="Logo">
         </a>
         <div class="header__social__media">
             <div class="header__anchors">
-                <a href="https://usdomagne-wordpress-theme.local/#section-classement-resultats" class="btnAnchor">Classement & Résultats</a>
-                <a href="https://usdomagne-wordpress-theme.local/#section-evenements" class="btnAnchor">évènements</a>
+                <a href="<?php esc_url(get_template_directory_uri()); ?>/#section-classement-resultats" class="btnAnchor">Classement & Résultats</a>
+                <a href="<?php esc_url(get_template_directory_uri()); ?>/#section-evenements" class="btnAnchor">évènements</a>
             </div>
             <ul class="header__social__media__list">
-                <li class="header__social__media__list__item"><a id="insta__icon" class="header__social__media__list__item__link" href="https://www.instagram.com/usdomagne/" target="_blank"><i class="fa-brands fa-square-instagram fa-2xl"></i></a></li>
-                <li class="header__social__media__list__item"><a id="fb__icon" class="header__social__media__list__item__link" href="https://www.facebook.com/usdomagne?locale=fr_FR" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl"></i></a></li>
+                <li class="header__social__media__list__item"><a id="insta__icon" class="header__social__media__list__item__link" href="https://www.instagram.com/usdomagne/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-instagram fa-2xl"></i></a></li>
+                <li class="header__social__media__list__item"><a id="fb__icon" class="header__social__media__list__item__link" href="https://www.facebook.com/usdomagne?locale=fr_FR" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook fa-2xl"></i></a></li>
             </ul>
         </div>
         <div id="burger__menu" class="site__header__burger">
@@ -113,15 +113,15 @@
             <div class="bottom__header__burger">
                 <div class="header__burger__social__media">
                     <ul class="header__burger__social__media__list">
-                        <li class="header__burger__social__media__list__item"><a id="insta__icon" class="header__burger__social__media__list__item__link" href="https://www.instagram.com/usdomagne/" target="_blank"><i class="fa-brands fa-square-instagram fa-2xl"></i></a></li>
-                        <li class="header__burger__social__media__list__item"><a id="fb__icon" class="header__burger__social__media__list__item__link" href="https://www.facebook.com/usdomagne?locale=fr_FR" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl"></i></a></li>
+                        <li class="header__burger__social__media__list__item"><a id="insta__icon" class="header__burger__social__media__list__item__link" href="https://www.instagram.com/usdomagne/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-instagram fa-2xl"></i></a></li>
+                        <li class="header__burger__social__media__list__item"><a id="fb__icon" class="header__burger__social__media__list__item__link" href="https://www.facebook.com/usdomagne?locale=fr_FR" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook fa-2xl"></i></a></li>
                     </ul>
                 </div>
                 <div id="container-anchor-cr" class="containerAnchorLink">
-                    <a href="https://usdomagne-wordpress-theme.local/#section-classement-resultats" class="anchorLink">Classement & Résultats</a>
+                    <a href="<?php esc_url(get_template_directory_uri()); ?>/#section-classement-resultats" class="anchorLink">Classement & Résultats</a>
                 </div>
                 <div id="container-anchor-events" class="containerAnchorLink">
-                    <a href="https://usdomagne-wordpress-theme.local/#section-evenements" class="anchorLink">évènements</a>
+                    <a href="<?php esc_url(get_template_directory_uri()); ?>/#section-evenements" class="anchorLink">évènements</a>
                 </div>
                 <?php wp_nav_menu(array(
                     'theme_location' => 'main',

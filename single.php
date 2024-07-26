@@ -8,13 +8,13 @@
             <nav class="header__all__pages__nav">
               <ul>
                 <li>
-                  <a href="<?php echo home_url('/'); ?>">Accueil</a>
+                  <a href="<?php echo esc_url(home_url('/')); ?>">Accueil</a>
                 </li>
                 <li>
                   <span><i class="fa-solid fa-minus"></i></span>
                 </li>
                 <li>
-                  <a href="http://localhost/usdomagne/actualites/">Actualités</a>
+                  <a href="<?php esc_url(get_template_directory_uri());  ?>/actualites/">Actualités</a>
                 </li>
                 <li>
                   <span><i class="fa-solid fa-minus"></i></span>
@@ -31,7 +31,7 @@
         </div>
         <?php
         $dataPost = getSinglePostData();
-      
+
         ?>
         <article class="post__single">
           <div class="post__single__img">
@@ -48,13 +48,12 @@
             <section class="post__single__gallery">
               <?php
               $countPostData = count($dataPost['post']);
-              
+
               for ($i = 1; $i < $countPostData; $i++) {
 
                 $keyPost = 'image' . $i;
                 if (isset($dataPost['post'][$keyPost])) {
                   $postData = $dataPost['post'][$keyPost];
-                  
                 }
                 if ($postData) {
               ?>

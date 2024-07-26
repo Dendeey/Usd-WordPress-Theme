@@ -2,11 +2,11 @@
 
 <?php
 if (is_category()) {
-	$title = "Catégorie : " . single_tag_title('', false);
+	$title = esc_html("Catégorie : " . single_tag_title('', false));
 } elseif (is_tag()) {
-	$title = "Étiquette : " . single_tag_title('', false);
+	$title = esc_html("Étiquette : " . single_tag_title('', false));
 } elseif (is_search()) {
-	$title = "Vous avez recherché : " . get_search_query();
+	$title = esc_html("Vous avez recherché : " . get_search_query());
 } else {
 	$title = 'Actualités';
 }
@@ -18,7 +18,7 @@ if (is_category()) {
 			<nav class="header__all__pages__nav">
 				<ul>
 					<li>
-						<a href="<?php echo home_url('/'); ?>">Accueil</a>
+						<a href="<?php echo esc_url(home_url('/')); ?>">Accueil</a>
 					</li>
 					<li>
 						<span><i class="fa-solid fa-minus"></i></span>
