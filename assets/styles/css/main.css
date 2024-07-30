@@ -1265,7 +1265,8 @@ table {
   padding-bottom: 4rem;
 }
 .post__single .post__single__img {
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
+  padding-top: 3rem;
   display: grid;
 }
 .post__single .post__single__img > figure {
@@ -1287,19 +1288,19 @@ table {
   font-family: "Open Sans", sans-serif;
 }
 .post__single .post__single__content .post__single__main__content > h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
   margin-top: 3rem;
 }
 .post__single .post__single__content .post__single__main__content > h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
   margin-top: 3rem;
 }
 .post__single .post__single__content .post__single__main__content > h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
   margin-top: 3rem;
@@ -1334,6 +1335,8 @@ table {
 .post__single .post__single__content .post__single__main__content > ul {
   padding-left: 2rem;
   margin-bottom: 1rem;
+  display: grid;
+  gap: 0.5rem;
 }
 .post__single .post__single__content .post__single__main__content > ul > li {
   font-size: 1.15rem;
@@ -1602,7 +1605,7 @@ table {
 }
 .right__section__content .right__section__container .right__section__main__content > h2::after {
   content: "";
-  width: 75%;
+  width: 25%;
   height: 4px;
   background-image: linear-gradient(to right, #FDCD11 50%, #034076 50%);
 }
@@ -1626,7 +1629,6 @@ table {
   margin-bottom: 1rem;
   color: #595959;
   font-size: 1.15rem;
-  text-align: justify;
   display: grid;
 }
 .right__section__content .right__section__container .right__section__main__content > p > img {
@@ -1726,7 +1728,6 @@ table {
   font-size: 1.15rem;
   color: #595959;
   margin-bottom: 1rem;
-  text-align: justify;
 }
 
 @media screen and (max-width: 767px) {
