@@ -507,3 +507,11 @@ function eventSix()
     }
 }
 add_shortcode('evenement_6', 'eventSix');
+
+function is_custom_page($slug)
+{
+    if (is_page($slug)) {
+        return true;
+    }
+    return false;
+}

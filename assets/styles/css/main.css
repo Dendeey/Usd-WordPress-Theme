@@ -574,24 +574,6 @@ table {
   padding-bottom: 4px;
 }
 
-.fullscreen__carousel-container {
-  width: 100%;
-  height: 100vh;
-}
-.fullscreen__carousel-container .fullscreen__slick-carousel {
-  width: 100%;
-  height: 100%;
-}
-.fullscreen__carousel-container .fullscreen__slick-carousel > figure {
-  width: 100%;
-  height: 100%;
-}
-.fullscreen__carousel-container .fullscreen__slick-carousel > figure > img {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
-
 .wpr-grid-image-wrap {
   filter: brightness(0.7);
 }
@@ -1779,8 +1761,8 @@ table {
   align-items: center;
   gap: 2rem;
   font-family: "Open Sans", sans-serif;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .teams__navigation .teams__classement-calendrier__navigation > button {
   justify-content: center;
@@ -1788,7 +1770,6 @@ table {
   width: 17rem;
   height: 3rem;
   text-decoration: none;
-  text-align: center;
   border-radius: 20rem;
   border: 1px solid;
   color: #034076;
@@ -1800,10 +1781,9 @@ table {
   transition: 0.3s ease-out;
   cursor: pointer;
   display: flex;
-  flex-wrap: wrap;
   text-transform: uppercase;
 }
-.teams__navigation .teams__classement-calendrier__navigation > button > span {
+.teams__navigation .teams__classement-calendrier__navigation > button > span:nth-of-type(2) {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
@@ -1953,7 +1933,8 @@ table {
     padding: 1rem;
   }
   .teams__navigation .teams__classement-calendrier__navigation > button {
-    height: 4rem;
+    height: 3.5rem;
+    flex-wrap: wrap;
   }
   .teams__navigation .teams__gallery__navigation {
     justify-content: start;
@@ -1994,10 +1975,11 @@ table {
 }
 .header__template__bis .header__bis__main__image {
   width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 .header__template__bis .header__bis__main__image > figure > img {
   width: 100%;
-  height: 40rem;
   object-fit: cover;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
   filter: brightness(0.7);
@@ -2005,53 +1987,56 @@ table {
 .header__template__bis .header__template__bis__container {
   position: absolute;
   z-index: 33;
+  align-self: center;
+  display: grid;
+  justify-content: center;
+  width: 100vw;
+}
+.header__template__bis .header__template__bis__container > div {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  max-width: 50vw;
-  justify-self: center;
-  align-self: center;
+  max-width: 80vw;
 }
-.header__template__bis .header__template__bis__container .header__template__bis__nav > ul {
+.header__template__bis .header__template__bis__container > div .header__template__bis__nav > ul {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
 }
-.header__template__bis .header__template__bis__container .header__template__bis__nav > ul > li {
+.header__template__bis .header__template__bis__container > div .header__template__bis__nav > ul > li {
   color: white;
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
 }
-.header__template__bis .header__template__bis__container .header__template__bis__nav > ul > li > a {
+.header__template__bis .header__template__bis__container > div .header__template__bis__nav > ul > li > a {
   color: white;
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
   opacity: 0.4;
 }
-.header__template__bis .header__template__bis__container .header__template__bis__nav > ul > li > a:hover {
+.header__template__bis .header__template__bis__container > div .header__template__bis__nav > ul > li > a:hover {
   opacity: 1;
 }
-.header__template__bis .header__template__bis__container .header__template__bis__nav > ul > li .fa-minus {
+.header__template__bis .header__template__bis__container > div .header__template__bis__nav > ul > li .fa-minus {
   opacity: 0.4;
 }
-.header__template__bis .header__template__bis__container .header__template__bis__nav > ul > li .nav__item__bold {
+.header__template__bis .header__template__bis__container > div .header__template__bis__nav > ul > li .nav__item__bold {
   font-weight: 700;
   text-transform: uppercase;
 }
-.header__template__bis .header__template__bis__container .header__template__bis__title {
+.header__template__bis .header__template__bis__container > div .header__template__bis__title {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
 }
-.header__template__bis .header__template__bis__container .header__template__bis__title > h1 {
+.header__template__bis .header__template__bis__container > div .header__template__bis__title > h1 {
   color: white;
   font-size: 2.5rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
 }
-.header__template__bis .header__template__bis__container .header__template__bis__title > span {
+.header__template__bis .header__template__bis__container > div .header__template__bis__title > span {
   width: 50%;
 }
 
@@ -2192,6 +2177,11 @@ table {
   font-size: 1.15rem;
 }
 
+@media screen and (max-width: 767px) {
+  .header__template__bis .header__bis__main__image {
+    height: 100%;
+  }
+}
 html {
   font-size: 14px;
   scroll-behavior: smooth !important;

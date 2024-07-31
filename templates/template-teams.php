@@ -5,11 +5,15 @@
 get_header();
 ?>
 
-<main class="main__all__pages">
+<main>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <?php the_content(); ?>
   <?php endwhile;
   endif; ?>
+
+  <section>
+
+  </section>
 
   <?php
   $dataDef = getDefTeamsPageData();
@@ -29,7 +33,11 @@ get_header();
 
     <section class="teams__classement-calendrier__navigation">
       <button id="classement__teams__anchor">Classement</button>
-      <button id="calendrier-resultats__teams__anchor">Calendrier<span>/</span>Résultats</button>
+      <button id="calendrier-resultats__teams__anchor">
+        <span>Résultats</span>
+        <span>/</span>
+        <span>Calendrier</span>
+      </button>
     </section>
 
     <section class="teams__gallery__navigation">
@@ -198,7 +206,7 @@ get_header();
 
     <?php if ($dataWidgets['widget']['widget2']) { ?>
       <section id="calendrier-resultats__teams">
-        <h3>Calendrier<span>/</span>Résultats</h3>
+        <h3>Résultats<span>/</span>Calendrier</h3>
         <span class="style__border__bottom"></span>
         <?php echo $dataWidgets['widget']['widget2']; ?>
       </section>

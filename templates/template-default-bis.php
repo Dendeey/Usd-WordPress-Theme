@@ -11,7 +11,7 @@ $dataBis = getTemplateDefaultBisData();
 
 ?>
 
-<main class="main__all__pages">
+<main>
     <section class="header__template__bis">
         <?php if ($dataBis['bis']['mainPicture']) { ?>
             <section class="header__bis__main__image">
@@ -20,24 +20,27 @@ $dataBis = getTemplateDefaultBisData();
                 </figure>
             </section>
         <?php } ?>
-        <div class="header__template__bis__container container__behavior">
-            <nav class="header__template__bis__nav">
-                <ul>
-                    <li>
-                        <a href="<?php echo esc_url(home_url('/')); ?>">Accueil</a>
-                    </li>
-                    <li>
-                        <span><i class="fa-solid fa-minus"></i></span>
-                    </li>
-                    <li>
-                        <span class="nav__item__bold"><?php echo the_title(); ?></span>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header__template__bis__title">
-                <h1><?php echo the_title(); ?></h1>
-                <span class="style__border__bottom"></span>
+        <div class="header__template__bis__container">
+            <div>
+                <nav class="header__template__bis__nav">
+                    <ul>
+                        <li>
+                            <a href="<?php echo esc_url(home_url('/')); ?>">Accueil</a>
+                        </li>
+                        <li>
+                            <span><i class="fa-solid fa-minus"></i></span>
+                        </li>
+                        <li>
+                            <span class="nav__item__bold"><?php echo the_title(); ?></span>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__template__bis__title">
+                    <h1><?php echo the_title(); ?></h1>
+                    <span class="style__border__bottom"></span>
+                </div>
             </div>
+
         </div>
     </section>
     <div class="container__behavior">

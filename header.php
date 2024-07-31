@@ -17,7 +17,7 @@
 </head>
 
 <body id="site__home" <?php body_class(); ?>>
-    <header <?php if (is_front_page()) { ?> id="homepage__header" class="homepage__header" <?php } else { ?> id="page__header" class="page__header" <?php } ?>>
+    <header <?php if (is_front_page() || is_custom_page('pole-seniors')) { ?> id="homepage__header" class="homepage__header" <?php } else { ?> id="page__header" class="page__header" <?php } ?>>
         <div class="header__menu__nav">
             <button id="menu__btn" class="header__side__menu__button">
                 <i class="fa-solid fa-bars-staggered fa-xl"></i>

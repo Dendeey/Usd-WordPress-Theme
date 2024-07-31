@@ -17,8 +17,8 @@
     align-items: center;
     gap: 2rem;
     font-family: $openSans;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
     & > button {
       justify-content: center;
@@ -26,7 +26,6 @@
       width: 17rem;
       height: 3rem;
       text-decoration: none;
-      text-align: center;
       border-radius: 20rem;
       border: 1px solid;
       color: $mainBlue;
@@ -38,10 +37,9 @@
       transition: 0.3s ease-out;
       cursor: pointer;
       display: flex;
-      flex-wrap: wrap;
       text-transform: uppercase;
 
-      & > span {
+      & > span:nth-of-type(2) {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
       }
@@ -232,7 +230,8 @@
       padding: 1rem;
 
       & > button {
-        height: 4rem;
+        height: 3.5rem;
+        flex-wrap: wrap;
       }
     }
 
