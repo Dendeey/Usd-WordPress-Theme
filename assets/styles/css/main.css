@@ -425,7 +425,7 @@ table {
 .header__all__pages .header__all__pages__container {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .header__all__pages__nav > ul {
@@ -435,11 +435,12 @@ table {
 }
 .header__all__pages__nav > ul > li {
   color: black;
-  font-size: 1rem;
+  font-size: 0.875rem;
+  font-family: "Bebas Neue", sans-serif;
 }
 .header__all__pages__nav > ul > li > a {
   color: black;
-  font-size: 1rem;
+  font-size: 0.875rem;
   opacity: 0.4;
 }
 .header__all__pages__nav > ul > li > a:hover {
@@ -451,6 +452,7 @@ table {
 .header__all__pages__nav > ul > li .nav__item__bold {
   font-weight: 700;
   text-transform: uppercase;
+  font-size: 0.875rem;
 }
 
 .header__all__pages__title {
@@ -461,7 +463,8 @@ table {
 .header__all__pages__title > h1 {
   color: black;
   font-size: 2.5rem;
-  font-weight: 800;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -508,6 +511,9 @@ table {
   }
   .header__all__pages__nav {
     display: none;
+  }
+  .header__all__pages__title {
+    padding: 0 1rem;
   }
 }
 .slider__img__homepage {
@@ -977,7 +983,7 @@ table {
   }
 }
 .actualites__content {
-  padding: 3rem 0 1.5rem;
+  padding: 3rem 0;
 }
 .actualites__content .actualites__content__container {
   display: grid;
@@ -1058,7 +1064,6 @@ table {
 .actualites__content .posts__pagination__nav {
   display: grid;
   padding-top: 6rem;
-  padding-bottom: 6rem;
 }
 .actualites__content .posts__pagination__nav .navigation {
   justify-self: center;
@@ -1092,7 +1097,7 @@ table {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  padding: 4rem 12vw 4rem;
+  padding: 3rem 12vw 3rem;
   background-color: #f7f7f7;
   border-top: solid 14px #034076;
 }
@@ -1356,10 +1361,17 @@ table {
     margin: 0 !important;
     padding: 0 !important;
   }
+  .actualites__content {
+    padding: 3rem 1rem;
+  }
   .actualites__content .actualites__content__container {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 3rem;
+  }
+  .actualites__content .actualites__content__container .post__link {
+    padding: 0.5rem;
+    background-color: #f7f7f7;
   }
   .post__single__header__content {
     padding: 0 1rem;
@@ -1390,13 +1402,17 @@ table {
     grid-template-columns: 1fr;
   }
   .last__posts > h3 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     text-align: center;
   }
   .last__posts > ul {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
+  }
+  .last__posts > ul > li {
+    padding: 0.5rem;
+    background-color: white;
   }
 }
 .section__error__content {
@@ -1486,9 +1502,10 @@ table {
   margin-bottom: 2.5rem;
 }
 .right__section__content .right__section__container .right__section__header > h1 {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 2.5rem;
   text-transform: uppercase;
+  font-family: "Bebas Neue", sans-serif;
 }
 .right__section__content .right__section__container .right__section__nav {
   display: flex;
@@ -1505,7 +1522,6 @@ table {
   border: 2px solid #034076;
   color: #034076;
   font-weight: 700;
-  font-size: 1.15rem;
   padding: 1rem;
   flex: auto;
   background: linear-gradient(to left, #fff 50%, #034076 50%) right;
@@ -1545,14 +1561,14 @@ table {
   margin-bottom: 2.5rem;
 }
 .right__section__content .right__section__container .right__section__main__content > h1 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
   margin-top: 3rem;
   text-transform: uppercase;
 }
 .right__section__content .right__section__container .right__section__main__content > h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
   margin-top: 3rem;
@@ -1568,7 +1584,7 @@ table {
   background-image: linear-gradient(to right, #fdcd11 50%, #034076 50%);
 }
 .right__section__content .right__section__container .right__section__main__content > h3 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 700;
   margin-bottom: 1rem;
   margin-top: 3rem;
@@ -1586,7 +1602,6 @@ table {
 .right__section__content .right__section__container .right__section__main__content > p {
   margin-bottom: 1rem;
   color: #595959;
-  font-size: 1.15rem;
   display: grid;
 }
 .right__section__content .right__section__container .right__section__main__content > p > img {
@@ -1608,11 +1623,7 @@ table {
   margin-bottom: 1rem;
   color: #595959;
 }
-.right__section__content .right__section__container .right__section__main__content > ul > li {
-  font-size: 1.15rem;
-}
 .right__section__content .right__section__container .right__section__main__content #wpcf7-f1180-o1 {
-  font-size: 1.15rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1645,7 +1656,6 @@ table {
   border: 2px solid #034076;
   color: #034076;
   font-weight: 700;
-  font-size: 1.15rem;
   padding: 1rem;
   background: linear-gradient(to left, #fff 50%, #034076 50%) right;
   background-size: 200%;
@@ -1682,7 +1692,6 @@ table {
   margin-bottom: 2.5rem;
 }
 .right__section__content .right__section__container .right__section__second__content > p {
-  font-size: 1.15rem;
   color: #595959;
   margin-bottom: 1rem;
 }

@@ -1,5 +1,5 @@
 .actualites__content {
-  padding: 3rem 0 1.5rem;
+  padding: 3rem 0;
 
   .actualites__content__container {
     display: grid;
@@ -100,7 +100,6 @@
   .posts__pagination__nav {
     display: grid;
     padding-top: 6rem;
-    padding-bottom: 6rem;
 
     .navigation {
       justify-self: center;
@@ -141,7 +140,7 @@
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  padding: 4rem 12vw 4rem;
+  padding: 3rem 12vw 3rem;
   background-color: $grey;
   border-top: solid 14px $mainBlue;
 
@@ -486,10 +485,16 @@
     padding: 0 !important;
   }
   .actualites__content {
+    padding: 3rem 1rem;
     .actualites__content__container {
       display: grid;
       grid-template-columns: 1fr;
       row-gap: 3rem;
+
+      .post__link {
+        padding: 0.5rem;
+        background-color: $grey;
+      }
     }
   }
 
@@ -536,14 +541,18 @@
 
   .last__posts {
     & > h3 {
-      font-size: 1.5rem;
+      font-size: $h3Size;
       text-align: center;
     }
 
     & > ul {
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
+      gap: 1rem;
+      & > li {
+        padding: 0.5rem;
+        background-color: white;
+      }
     }
   }
 }
