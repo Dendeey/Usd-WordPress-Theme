@@ -38,12 +38,11 @@
           & > li {
             color: white;
             font-size: 1rem;
-            font-family: $openSans;
 
             & > a {
               color: white;
               font-size: 1rem;
-              font-family: $openSans;
+
               opacity: 0.4;
             }
 
@@ -72,7 +71,7 @@
         & > h1 {
           color: white;
           font-size: 2.5rem;
-          font-family: $openSans;
+
           font-weight: 800;
           text-transform: uppercase;
         }
@@ -97,7 +96,7 @@
 
 .template__bis__first__gallery {
   margin-top: 4rem;
-  font-family: $openSans;
+
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -130,7 +129,7 @@
 
 .template__bis__second__gallery {
   margin-top: 8rem;
-  font-family: $openSans;
+
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -163,7 +162,7 @@
 
 .template__bis__common__content {
   margin: 4rem 0 8rem 0;
-  font-family: $openSans;
+
   display: flex;
   justify-content: center;
   align-items: center;

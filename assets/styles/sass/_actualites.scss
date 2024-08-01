@@ -47,7 +47,6 @@
         }
 
         & > div {
-          font-family: $openSans;
           color: black;
           display: flex;
           flex-direction: column;
@@ -107,7 +106,6 @@
       justify-self: center;
 
       .nav-links {
-        font-family: $openSans;
         font-size: 1rem;
         font-weight: 700;
         display: flex;
@@ -200,7 +198,6 @@
           }
 
           & > div {
-            font-family: $openSans;
             color: black;
             display: flex;
             flex-direction: column;
@@ -263,7 +260,6 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    font-family: $openSans;
 
     .header__all__pages__nav {
       margin-bottom: 4rem;
@@ -334,7 +330,6 @@
   .post__single__content {
     max-width: 50rem;
     overflow: hidden;
-    font-family: $openSans;
 
     .post__single__main__content {
       & > h1 {

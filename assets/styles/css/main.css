@@ -68,14 +68,14 @@ table {
 }
 .homepage__header .header__menu__nav {
   display: inline-flex;
-  gap: 2.5rem;
-  left: 3rem;
+  gap: 2rem;
+  left: 2.5rem;
   position: relative;
 }
 .homepage__header .header__menu__nav .header__side__menu__button {
   font-size: 1rem;
-  font-family: "Open Sans", sans-serif;
   font-weight: 700;
+  font-family: "Barlow", sans-serif;
   color: white;
   border: none;
   text-decoration: none;
@@ -88,7 +88,7 @@ table {
 }
 .homepage__header .header__menu__nav .header__menu {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   list-style-type: none;
   padding-left: 0;
 }
@@ -100,12 +100,13 @@ table {
 .homepage__header .header__menu__nav .header__menu .menu-item a {
   text-decoration: none;
   color: white;
+  font-size: 1rem;
 }
 .homepage__header .header__menu__nav .header__menu .menu-item a:hover {
   opacity: 0.5;
 }
 .homepage__header .header__logo__link {
-  width: 5rem;
+  width: 4rem;
   justify-self: center;
   display: flex;
   transition: 0.3s;
@@ -122,19 +123,19 @@ table {
   display: flex;
   justify-content: right;
   position: relative;
-  right: 3rem;
-  gap: 2.5rem;
+  right: 2.5rem;
+  gap: 2rem;
 }
 .homepage__header .header__social__media .header__social__media__list {
   display: flex;
   flex-direction: row;
-  gap: 1.5rem;
+  gap: 1rem;
   list-style-type: none;
   padding-left: 0;
 }
 .homepage__header .header__social__media .header__social__media__list .header__social__media__list__item .header__social__media__list__item__link {
   text-decoration: none;
-  color: #FDCD11;
+  color: #fdcd11;
   right: 0;
 }
 .homepage__header .header__social__media .header__social__media__list .header__social__media__list__item .header__social__media__list__item__link:hover {
@@ -145,14 +146,14 @@ table {
   height: 63px;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to right, #034076 100%, #FDCD11);
+  background-image: linear-gradient(to right, #034076 100%, #fdcd11);
 }
 
 .page__header {
   height: 63px;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to right, #034076 100%, #FDCD11);
+  background-image: linear-gradient(to right, #034076 100%, #fdcd11);
   position: fixed;
   top: 0;
   right: 0;
@@ -166,14 +167,14 @@ table {
 }
 .page__header .header__menu__nav {
   display: inline-flex;
-  gap: 2.5rem;
-  left: 3rem;
+  gap: 2rem;
+  left: 2.5rem;
   position: relative;
 }
 .page__header .header__menu__nav .header__side__menu__button {
   font-size: 1rem;
-  font-family: "Open Sans", sans-serif;
   font-weight: 700;
+  font-family: "Barlow", sans-serif;
   color: white;
   border: none;
   text-decoration: none;
@@ -186,7 +187,7 @@ table {
 }
 .page__header .header__menu__nav .header__menu {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   list-style-type: none;
   padding-left: 0;
 }
@@ -198,6 +199,7 @@ table {
 .page__header .header__menu__nav .header__menu .menu-item a {
   text-decoration: none;
   color: white;
+  font-size: 1rem;
 }
 .page__header .header__menu__nav .header__menu .menu-item a:hover {
   opacity: 0.5;
@@ -216,18 +218,18 @@ table {
   display: flex;
   justify-content: right;
   position: relative;
-  right: 3rem;
+  right: 2.5rem;
 }
 .page__header .header__social__media .header__social__media__list {
   display: flex;
   flex-direction: row;
-  gap: 1.5rem;
+  gap: 1rem;
   list-style-type: none;
   padding-left: 0;
 }
 .page__header .header__social__media .header__social__media__list .header__social__media__list__item .header__social__media__list__item__link {
   text-decoration: none;
-  color: #FDCD11;
+  color: #fdcd11;
   right: 0;
 }
 .page__header .header__social__media .header__social__media__list .header__social__media__list__item .header__social__media__list__item__link:hover {
@@ -237,7 +239,7 @@ table {
 .site__header__burger {
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to top, #034076 100%, #FDCD11);
+  background-image: linear-gradient(to top, #034076 100%, #fdcd11);
   height: 100vh;
   width: 20vw;
   position: fixed;
@@ -259,12 +261,11 @@ table {
   flex-direction: row;
   justify-content: space-between;
   height: 110px;
-  padding-right: 2.5rem;
-  padding-left: 2.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
   align-items: center;
   color: white;
   font-weight: 700;
-  font-family: "Open Sans", sans-serif;
   -webkit-box-shadow: 0 4px 6px -6px #222;
   -moz-box-shadow: 0 4px 6px -6px #222;
   box-shadow: 0 4px 6px -6px #222;
@@ -280,7 +281,6 @@ table {
   height: 100%;
   padding-left: 2.5rem;
   font-weight: 700;
-  font-family: "Open Sans", sans-serif;
   color: white;
 }
 .site__header__burger .top__header__burger .top__header__burger__nav .containerAnchorLink .anchorLink:hover {
@@ -303,7 +303,6 @@ table {
   padding-left: 2.5rem;
   height: 4rem;
   font-weight: 700;
-  font-family: "Open Sans", sans-serif;
   color: white;
   cursor: pointer;
 }
@@ -347,7 +346,6 @@ table {
   height: 100%;
   color: white;
   font-size: 0.875rem;
-  font-family: "Open Sans", sans-serif;
   padding-left: 5rem;
 }
 .site__header__burger .top__header__burger .top__header__burger__nav > ul > li .content__dropdown > ul > li:hover {
@@ -367,7 +365,6 @@ table {
   height: 100%;
   padding-left: 2.5rem;
   font-weight: 700;
-  font-family: "Open Sans", sans-serif;
   color: white;
 }
 .site__header__burger .top__header__burger .top__header__burger__nav > ul .burger__menu > li:hover {
@@ -379,7 +376,7 @@ table {
   height: 100vh;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to right, #FDCD11 100%, #034076);
+  background-image: linear-gradient(to right, #fdcd11 100%, #034076);
 }
 .site__header__burger .bottom__header__burger .header__burger__social__media {
   height: 4rem;
@@ -411,7 +408,6 @@ table {
   height: 100%;
   padding-left: 2.5rem;
   font-weight: 700;
-  font-family: "Open Sans", sans-serif;
   color: #034076;
 }
 .site__header__burger .bottom__header__burger #menu-menu-principal-1 > li > a:hover {
@@ -423,13 +419,13 @@ table {
 }
 
 .header__all__pages {
-  padding: 3rem 0 1.5rem;
+  padding: 3rem 0 3rem;
   background-color: #f7f7f7;
 }
 .header__all__pages .header__all__pages__container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .header__all__pages__nav > ul {
@@ -440,12 +436,10 @@ table {
 .header__all__pages__nav > ul > li {
   color: black;
   font-size: 1rem;
-  font-family: "Open Sans", sans-serif;
 }
 .header__all__pages__nav > ul > li > a {
   color: black;
   font-size: 1rem;
-  font-family: "Open Sans", sans-serif;
   opacity: 0.4;
 }
 .header__all__pages__nav > ul > li > a:hover {
@@ -467,7 +461,6 @@ table {
 .header__all__pages__title > h1 {
   color: black;
   font-size: 2.5rem;
-  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -526,12 +519,12 @@ table {
   width: 100%;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to right, #034076 100%, #FDCD11);
+  background-image: linear-gradient(to right, #034076 100%, #fdcd11);
   display: flex;
   flex-direction: row;
   justify-content: center;
   border-radius: 5px;
-  border-right: solid 4px #FDCD11;
+  border-right: solid 4px #fdcd11;
   overflow: hidden;
 }
 .event .event-img-container {
@@ -540,7 +533,7 @@ table {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-color: #FDCD11;
+  background-color: #fdcd11;
 }
 .event .event-img-container .event-img {
   width: 100%;
@@ -562,13 +555,13 @@ table {
   padding-top: 4px;
 }
 .event .event-text > p {
-  font-size: 16px;
+  font-size: 1rem;
   color: white;
   text-align: center;
 }
 .event .event-text .price {
-  font-size: 16px;
-  color: #FDCD11;
+  font-size: 1rem;
+  color: #fdcd11;
   justify-self: center;
   font-weight: bold;
   padding-bottom: 4px;
@@ -589,7 +582,7 @@ table {
 .section__prochains__matchs {
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to right, #034076 100%, #FDCD11);
+  background-image: linear-gradient(to right, #034076 100%, #fdcd11);
 }
 .section__prochains__matchs .item__widget__scorenco__prochains__matchs {
   border-radius: 5px;
@@ -605,7 +598,7 @@ table {
 .section__img__nav {
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to right, #034076 100%, #FDCD11);
+  background-image: linear-gradient(to right, #034076 100%, #fdcd11);
 }
 .section__img__nav .item__widget__scorenco__classement__resultats {
   border-radius: 5px;
@@ -614,23 +607,21 @@ table {
 .section__boutique {
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to right, #034076 100%, #FDCD11);
+  background-image: linear-gradient(to right, #034076 100%, #fdcd11);
 }
 
 .section__instagram {
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to right, #034076 100%, #FDCD11);
+  background-image: linear-gradient(to right, #034076 100%, #fdcd11);
 }
 .section__instagram .sbi_header_link {
-  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
 }
 .section__instagram .sbi_photo {
   border-radius: 3px;
 }
 .section__instagram .sbi_load_btn {
-  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -649,25 +640,24 @@ table {
 .section__partenaires .title__partenaires {
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: -3px;
-  font-family: "Open Sans", sans-serif;
   font-size: 2.5rem;
-  font-weight: 800;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
   color: #034076;
-  border-bottom: solid 3px #FDCD11;
+  border-bottom: solid 3px #fdcd11;
 }
 .section__partenaires .partenaires__items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
-  margin: 0 10vw 0;
+  gap: 1rem;
+  max-width: 75vw;
 }
 .section__partenaires .partenaires__items > a {
-  width: 9rem;
-  height: 9rem;
-  background-size: 9rem auto;
+  width: 8rem;
+  height: 8rem;
+  background-size: 8rem auto;
   background-repeat: no-repeat;
   background-position: center;
   transition-duration: 0.3s;
@@ -748,9 +738,9 @@ table {
 
 @media screen and (max-width: 767px) {
   .section__partenaires .partenaires__items > a {
-    width: 7rem;
-    height: 7rem;
-    background-size: 7rem auto;
+    width: 6rem;
+    height: 6rem;
+    background-size: 6rem auto;
   }
 }
 .swiper-slider {
@@ -761,17 +751,16 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 4rem;
+  padding-top: 3rem;
 }
 .swiper-slider .title__partenaires {
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: -3px;
-  font-family: "Open Sans", sans-serif;
   font-size: 2.5rem;
-  font-weight: 800;
+  font-weight: 700;
+  font-family: "Bebas Neue", sans-serif;
   color: #034076;
-  border-bottom: solid 3px #FDCD11;
+  border-bottom: solid 3px #fdcd11;
 }
 .swiper-slider .swiper {
   max-width: 75vw;
@@ -783,7 +772,7 @@ table {
   align-items: center;
 }
 .swiper-slider .swiper .swiper-wrapper .swiper-slide .swiper-sponsor {
-  width: 15rem;
+  width: 12rem;
   height: auto;
   object-fit: cover;
 }
@@ -794,15 +783,15 @@ table {
   padding-bottom: 2rem;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to right, #034076 100%, #FDCD11);
+  background-image: linear-gradient(to right, #034076 100%, #fdcd11);
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3rem;
   justify-content: center;
   align-items: center;
 }
 .site__footer .footer__logo {
-  width: 5rem;
+  width: 4rem;
 }
 .site__footer .footer__logo .footer__logo__img {
   width: 100%;
@@ -820,7 +809,6 @@ table {
 .site__footer .footer__nav .footer__nav__item > p {
   font-size: 1.2rem;
   font-weight: 700;
-  font-family: "Open Sans", sans-serif;
   color: white;
 }
 .site__footer .footer__nav .footer__nav__item .footer__nav__social__media {
@@ -831,7 +819,7 @@ table {
 }
 .site__footer .footer__nav .footer__nav__item .footer__nav__social__media .footer__nav__social__media__icon {
   text-decoration: none;
-  color: #FDCD11;
+  color: #fdcd11;
 }
 .site__footer .footer__nav .footer__nav__item .footer__nav__social__media .footer__nav__social__media__icon:hover {
   opacity: 0.5;
@@ -839,7 +827,6 @@ table {
 .site__footer .footer__nav .footer__nav__item .footer__nav__item__title {
   font-size: 1.2rem;
   font-weight: 700;
-  font-family: "Open Sans", sans-serif;
   color: white;
 }
 .site__footer .footer__nav .footer__nav__item .footer__nav__item__title > span {
@@ -856,7 +843,6 @@ table {
 .site__footer .footer__nav .footer__nav__item .footer__burger__menu > li > a {
   font-size: 1.2rem;
   font-weight: 700;
-  font-family: "Open Sans", sans-serif;
   color: white;
 }
 .site__footer .footer__nav .footer__nav__item .footer__burger__menu > li > a:hover {
@@ -873,7 +859,6 @@ table {
 .site__footer .footer__nav .footer__nav__item > nav .burger__equipes > li > a {
   text-decoration: none;
   font-size: 0.9rem;
-  font-family: "Open Sans", sans-serif;
   color: white;
 }
 .site__footer .footer__nav .footer__nav__item > nav .burger__equipes > li > a > span {
@@ -888,7 +873,6 @@ table {
 .site__footer .footer__nav .footer__nav__item > nav .burger__club > li > a {
   text-decoration: none;
   font-size: 0.9rem;
-  font-family: "Open Sans", sans-serif;
   color: white;
 }
 .site__footer .footer__nav .footer__nav__item > nav .burger__club > li > a > span {
@@ -914,7 +898,6 @@ table {
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 700;
-  font-family: "Open Sans", sans-serif;
   color: white;
 }
 .site__footer .footer__menu .menu-item > a:hover {
@@ -1035,7 +1018,6 @@ table {
   transform: scale(1.05);
 }
 .actualites__content .actualites__content__container .post__link .post > div {
-  font-family: "Open Sans", sans-serif;
   color: black;
   display: flex;
   flex-direction: column;
@@ -1057,7 +1039,7 @@ table {
   top: 100%;
   width: 100%;
   height: 3px;
-  background-image: linear-gradient(to right, #FDCD11 50%, #034076 50%);
+  background-image: linear-gradient(to right, #fdcd11 50%, #034076 50%);
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
   z-index: 2;
@@ -1082,7 +1064,6 @@ table {
   justify-self: center;
 }
 .actualites__content .posts__pagination__nav .navigation .nav-links {
-  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 700;
   display: flex;
@@ -1090,7 +1071,7 @@ table {
 }
 .actualites__content .posts__pagination__nav .navigation .nav-links .page-numbers.current {
   background-color: #034076;
-  color: #FDCD11;
+  color: #fdcd11;
 }
 .actualites__content .posts__pagination__nav .navigation .nav-links .page-numbers {
   border-left: solid 3px #034076;
@@ -1160,7 +1141,6 @@ table {
   transform: scale(1.05);
 }
 .last__posts > ul > li .post__link .post > div {
-  font-family: "Open Sans", sans-serif;
   color: black;
   display: flex;
   flex-direction: column;
@@ -1182,7 +1162,7 @@ table {
   top: 100%;
   width: 100%;
   height: 3px;
-  background-image: linear-gradient(to right, #FDCD11 50%, #034076 50%);
+  background-image: linear-gradient(to right, #fdcd11 50%, #034076 50%);
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
   z-index: 2;
@@ -1209,7 +1189,6 @@ table {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  font-family: "Open Sans", sans-serif;
 }
 .post__single__header__content .post__single__header__fixed .header__all__pages__nav {
   margin-bottom: 4rem;
@@ -1232,7 +1211,7 @@ table {
   text-decoration: none;
   border-radius: 15px;
   background-color: #034076;
-  color: #FDCD11;
+  color: #fdcd11;
   font-weight: 700;
   padding: 5px;
 }
@@ -1267,7 +1246,6 @@ table {
 .post__single .post__single__content {
   max-width: 50rem;
   overflow: hidden;
-  font-family: "Open Sans", sans-serif;
 }
 .post__single .post__single__content .post__single__main__content > h1 {
   font-size: 2rem;
@@ -1427,7 +1405,6 @@ table {
   gap: 4rem;
   justify-content: center;
   align-items: center;
-  font-family: "Open Sans", sans-serif;
   height: 60vh;
 }
 .section__error__content > h1 {
@@ -1436,7 +1413,7 @@ table {
   color: #034076;
 }
 .section__error__content > h1 > span .fa-futbol {
-  color: #FDCD11;
+  color: #fdcd11;
 }
 .section__error__content > p {
   font-size: 2rem;
@@ -1447,7 +1424,7 @@ table {
 .section__error__content > a {
   background-color: #034076;
   padding: 1rem;
-  color: #FDCD11;
+  color: #fdcd11;
   font-weight: 700;
   font-size: 1.15rem;
 }
@@ -1497,7 +1474,6 @@ table {
   width: 50%;
   display: flex;
   flex-direction: column;
-  font-family: "Open Sans", sans-serif;
   overflow: hidden;
 }
 .right__section__content .right__section__container {
@@ -1538,7 +1514,7 @@ table {
 }
 .right__section__content .right__section__container .right__section__nav > a:hover {
   background-position: left;
-  color: #FDCD11;
+  color: #fdcd11;
 }
 .right__section__content .right__section__container .right__section__referees {
   display: grid;
@@ -1589,7 +1565,7 @@ table {
   content: "";
   width: 25%;
   height: 4px;
-  background-image: linear-gradient(to right, #FDCD11 50%, #034076 50%);
+  background-image: linear-gradient(to right, #fdcd11 50%, #034076 50%);
 }
 .right__section__content .right__section__container .right__section__main__content > h3 {
   font-size: 1.5rem;
@@ -1605,7 +1581,7 @@ table {
   content: "";
   width: 75%;
   height: 4px;
-  background-image: linear-gradient(to right, #FDCD11 50%, #034076 50%);
+  background-image: linear-gradient(to right, #fdcd11 50%, #034076 50%);
 }
 .right__section__content .right__section__container .right__section__main__content > p {
   margin-bottom: 1rem;
@@ -1637,7 +1613,6 @@ table {
 }
 .right__section__content .right__section__container .right__section__main__content #wpcf7-f1180-o1 {
   font-size: 1.15rem;
-  font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1678,7 +1653,7 @@ table {
 }
 .right__section__content .right__section__container .right__section__main__content #wpcf7-f1180-o1 > form > p .wpcf7-submit:hover {
   background-position: left;
-  color: #FDCD11;
+  color: #fdcd11;
 }
 .right__section__content .right__section__container .right__section__gallery .right__section__gallery__content {
   display: grid;
@@ -1742,6 +1717,86 @@ table {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.swiper-header {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100vw;
+  padding-top: 3rem;
+  margin-top: 110px;
+}
+.swiper-header .header-container {
+  margin-left: 10vw;
+}
+.swiper-header .header-container > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.swiper-header .header-container > ul > li:first-of-type {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  font-size: 14px;
+}
+.swiper-header .header-container > ul > li:first-of-type > a {
+  text-decoration: none;
+  color: grey;
+}
+.swiper-header .header-container > ul > li:first-of-type > span {
+  color: grey;
+}
+.swiper-header .header-container > ul > li:first-of-type > p {
+  font-weight: bold;
+}
+.swiper-header .header-container > ul > li:last-of-type {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.swiper-header .header-container > ul > li:last-of-type > p {
+  letter-spacing: -3px;
+}
+.swiper-header .header-container > ul > li {
+  color: white;
+}
+
+.main_swiper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.main_swiper .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.main_swiper .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+.main_swiper .swiper-wrapper .swiper-slide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+.main_swiper .swiper-wrapper .swiper-slide > picture > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+.main_swiper .swiper-pagination-bullet {
+  background: white;
+}
+.main_swiper .swiper-button-prev {
+  color: white;
+}
+.main_swiper .swiper-button-next {
+  color: white;
+}
+
 .teams__navigation {
   position: sticky;
   left: 0;
@@ -1751,7 +1806,7 @@ table {
   overflow: hidden;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to right, #034076 100%, #FDCD11);
+  background-image: linear-gradient(to right, #034076 100%, #fdcd11);
 }
 .teams__navigation .teams__classement-calendrier__navigation {
   display: flex;
@@ -1760,7 +1815,6 @@ table {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  font-family: "Open Sans", sans-serif;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -1775,8 +1829,7 @@ table {
   color: #034076;
   font-weight: 700;
   font-size: 1.15rem;
-  font-family: "Open Sans", sans-serif;
-  background: linear-gradient(to left, #fff 50%, #FDCD11 50%) right;
+  background: linear-gradient(to left, #fff 50%, #fdcd11 50%) right;
   background-size: 200%;
   transition: 0.3s ease-out;
   cursor: pointer;
@@ -1791,15 +1844,14 @@ table {
   background-position: left;
 }
 .teams__navigation .teams__gallery__navigation {
-  font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: scroll;
-  border-top: solid 3px #FDCD11;
+  border-top: solid 3px #fdcd11;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to right, #034076 100%, #FDCD11);
+  background-image: linear-gradient(to right, #034076 100%, #fdcd11);
   padding: 1rem;
 }
 .teams__navigation .teams__gallery__navigation > ul {
@@ -1809,13 +1861,12 @@ table {
   gap: 1rem;
 }
 .teams__navigation .teams__gallery__navigation > ul > li > button {
-  font-family: "Open Sans", sans-serif;
   width: 10rem;
   text-decoration: none;
   border: none;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to right, #034076 100%, #FDCD11);
+  background-image: linear-gradient(to right, #034076 100%, #fdcd11);
   color: white;
   font-size: 1.15rem;
   font-weight: 700;
@@ -1835,7 +1886,6 @@ table {
   display: flex;
   flex-direction: column;
   gap: 6rem;
-  font-family: "Open Sans", sans-serif;
   padding-top: 6rem;
 }
 .teams__gallery .teams__gallery__header {
@@ -1882,7 +1932,6 @@ table {
 .teams__widgets {
   margin-top: 4rem;
   margin-bottom: 4rem;
-  font-family: "Open Sans", sans-serif;
 }
 .teams__widgets > section {
   padding: 6rem 0 0 0;
@@ -2005,12 +2054,10 @@ table {
 .header__template__bis .header__template__bis__container > div .header__template__bis__nav > ul > li {
   color: white;
   font-size: 1rem;
-  font-family: "Open Sans", sans-serif;
 }
 .header__template__bis .header__template__bis__container > div .header__template__bis__nav > ul > li > a {
   color: white;
   font-size: 1rem;
-  font-family: "Open Sans", sans-serif;
   opacity: 0.4;
 }
 .header__template__bis .header__template__bis__container > div .header__template__bis__nav > ul > li > a:hover {
@@ -2032,7 +2079,6 @@ table {
 .header__template__bis .header__template__bis__container > div .header__template__bis__title > h1 {
   color: white;
   font-size: 2.5rem;
-  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -2048,7 +2094,6 @@ table {
 
 .template__bis__first__gallery {
   margin-top: 4rem;
-  font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -2078,7 +2123,6 @@ table {
 
 .template__bis__second__gallery {
   margin-top: 8rem;
-  font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -2108,7 +2152,6 @@ table {
 
 .template__bis__common__content {
   margin: 4rem 0 8rem 0;
-  font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2138,7 +2181,7 @@ table {
   content: "";
   width: 75%;
   height: 4px;
-  background-image: linear-gradient(to right, #FDCD11 50%, #034076 50%);
+  background-image: linear-gradient(to right, #fdcd11 50%, #034076 50%);
 }
 .template__bis__common__content .template__bis__common__content__item > h3 {
   font-size: 1.5rem;
@@ -2155,7 +2198,7 @@ table {
   content: "";
   width: 75%;
   height: 4px;
-  background-image: linear-gradient(to right, #FDCD11 50%, #034076 50%);
+  background-image: linear-gradient(to right, #fdcd11 50%, #034076 50%);
 }
 .template__bis__common__content .template__bis__common__content__item > p {
   margin-bottom: 1rem;
@@ -2183,7 +2226,6 @@ table {
   }
 }
 html {
-  font-size: 14px;
   scroll-behavior: smooth !important;
   overflow-x: hidden;
   /* width */
@@ -2203,13 +2245,15 @@ html body {
   min-height: 100vh;
   width: 100vw;
   line-height: 1.5;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
 }
 @font-face {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap);
+  src: url(https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap);
   font-display: swap;
 }
 html #overlay {
@@ -2239,7 +2283,7 @@ html .style__border__bottom {
   display: inline-block;
   width: 100%;
   height: 4px;
-  background-image: linear-gradient(to right, #FDCD11 50%, #034076 50%);
+  background-image: linear-gradient(to right, #fdcd11 50%, #034076 50%);
 }
 @media screen and (max-width: 767px) {
   html .template-default__container__behavior {

@@ -46,13 +46,13 @@
     }
 
     & > p {
-      font-size: 16px;
+      font-size: 1rem;
       color: white;
       text-align: center;
     }
 
     .price {
-      font-size: 16px;
+      font-size: 1rem;
       color: $mainYellow;
       justify-self: center;
       font-weight: bold;
@@ -117,7 +117,6 @@
   background-image: linear-gradient(to right, $mainBlue 100%, $mainYellow);
 
   .sbi_header_link {
-    font-family: $openSans;
     font-size: 1rem;
   }
 
@@ -126,7 +125,6 @@
   }
 
   .sbi_load_btn {
-    font-family: $openSans;
     font-size: 1rem;
     font-weight: 700;
   }

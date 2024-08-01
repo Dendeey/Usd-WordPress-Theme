@@ -6,14 +6,6 @@ get_header();
 ?>
 
 <main>
-  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-      <?php the_content(); ?>
-  <?php endwhile;
-  endif; ?>
-
-  <section>
-
-  </section>
 
   <?php
   $dataDef = getDefTeamsPageData();
@@ -28,6 +20,42 @@ get_header();
 
   $dataWidgets = getScorencoWidgetsTeamPage();
   ?>
+  <section class="swiper-header">
+    <nav class="header-container">
+      <ul>
+        <li>
+          <a href="#">Accueil</a>
+          <span>-</span>
+          <p>Equipes séniors</p>
+        </li>
+        <li>
+          <p>équipes séniors</p>
+        </li>
+      </ul>
+    </nav>
+  </section>
+  <section class="main_swiper">
+
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/img/nouveau_site_usd.png" alt="osef">
+      </div>
+
+      <div class="swiper-slide">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/img/nouveau_site_usd.png" alt="osef">
+      </div>
+
+
+      <div class="swiper-slide">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/img/nouveau_site_usd.png" alt="osef">
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </section>
 
   <section class="teams__navigation">
 

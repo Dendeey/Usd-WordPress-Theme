@@ -14,14 +14,14 @@
 
   .header__menu__nav {
     display: inline-flex;
-    gap: 2.5rem;
-    left: 3rem;
+    gap: 2rem;
+    left: 2.5rem;
     position: relative;
 
     .header__side__menu__button {
       font-size: 1rem;
-      font-family: $openSans;
       font-weight: 700;
+      font-family: $bodyTextFont;
       color: white;
       border: none;
       text-decoration: none;
@@ -36,7 +36,7 @@
 
     .header__menu {
       display: flex;
-      gap: 1.5rem;
+      gap: 1rem;
       list-style-type: none;
       padding-left: 0;
 
@@ -48,6 +48,7 @@
         a {
           text-decoration: none;
           color: white;
+          font-size: 1rem;
         }
 
         a:hover {
@@ -58,7 +59,7 @@
   }
 
   .header__logo__link {
-    width: 5rem;
+    width: 4rem;
     justify-self: center;
     display: flex;
     transition: 0.3s;
@@ -78,13 +79,13 @@
     display: flex;
     justify-content: right;
     position: relative;
-    right: 3rem;
-    gap: 2.5rem;
+    right: 2.5rem;
+    gap: 2rem;
 
     .header__social__media__list {
       display: flex;
       flex-direction: row;
-      gap: 1.5rem;
+      gap: 1rem;
       list-style-type: none;
       padding-left: 0;
 
@@ -128,14 +129,14 @@
 
   .header__menu__nav {
     display: inline-flex;
-    gap: 2.5rem;
-    left: 3rem;
+    gap: 2rem;
+    left: 2.5rem;
     position: relative;
 
     .header__side__menu__button {
       font-size: 1rem;
-      font-family: $openSans;
       font-weight: 700;
+      font-family: $bodyTextFont;
       color: white;
       border: none;
       text-decoration: none;
@@ -150,7 +151,7 @@
 
     .header__menu {
       display: flex;
-      gap: 1.5rem;
+      gap: 1rem;
       list-style-type: none;
       padding-left: 0;
 
@@ -162,6 +163,7 @@
         a {
           text-decoration: none;
           color: white;
+          font-size: 1rem;
         }
 
         a:hover {
@@ -187,12 +189,12 @@
     display: flex;
     justify-content: right;
     position: relative;
-    right: 3rem;
+    right: 2.5rem;
 
     .header__social__media__list {
       display: flex;
       flex-direction: row;
-      gap: 1.5rem;
+      gap: 1rem;
       list-style-type: none;
       padding-left: 0;
 
@@ -236,12 +238,12 @@
       flex-direction: row;
       justify-content: space-between;
       height: 110px;
-      padding-right: 2.5rem;
-      padding-left: 2.5rem;
+      padding-right: 2rem;
+      padding-left: 2rem;
       align-items: center;
       color: white;
       font-weight: 700;
-      font-family: $openSans;
+
       -webkit-box-shadow: 0 4px 6px -6px #222;
       -moz-box-shadow: 0 4px 6px -6px #222;
       box-shadow: 0 4px 6px -6px #222;
@@ -258,7 +260,6 @@
           height: 100%;
           padding-left: 2.5rem;
           font-weight: 700;
-          font-family: "Open Sans", sans-serif;
           color: white;
         }
         .anchorLink:hover {
@@ -282,7 +283,7 @@
             padding-left: 2.5rem;
             height: 4rem;
             font-weight: 700;
-            font-family: $openSans;
+
             color: white;
             cursor: pointer;
 
@@ -331,7 +332,6 @@
                   height: 100%;
                   color: white;
                   font-size: 0.875rem;
-                  font-family: $openSans;
                   padding-left: 5rem;
                 }
               }
@@ -359,7 +359,7 @@
               height: 100%;
               padding-left: 2.5rem;
               font-weight: 700;
-              font-family: $openSans;
+
               color: white;
             }
           }
@@ -417,7 +417,6 @@
           height: 100%;
           padding-left: 2.5rem;
           font-weight: 700;
-          font-family: "Open Sans", sans-serif;
           color: $mainBlue;
         }
 
@@ -434,13 +433,13 @@
 }
 
 .header__all__pages {
-  padding: 3rem 0 1.5rem;
+  padding: 3rem 0 3rem;
   background-color: $grey;
 
   .header__all__pages__container {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
   }
 }
 
@@ -453,12 +452,11 @@
     & > li {
       color: black;
       font-size: 1rem;
-      font-family: $openSans;
 
       & > a {
         color: black;
         font-size: 1rem;
-        font-family: $openSans;
+
         opacity: 0.4;
       }
 
@@ -486,7 +484,7 @@
   & > h1 {
     color: black;
     font-size: 2.5rem;
-    font-family: $openSans;
+
     font-weight: 800;
     text-transform: uppercase;
   }

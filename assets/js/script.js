@@ -239,4 +239,24 @@ window.addEventListener("DOMContentLoaded", function () {
     });
   }
   templateDefaultSlider();
+
+  //Template teams swiper slider
+  function templateTeamsSlider() {
+    const swiper = new Swiper(".main_swiper", {
+      // Optional parameters
+      loop: false,
+
+      // If we need pagination
+      pagination: {
+        el: ".main_swiper .swiper-pagination",
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".main_swiper .swiper-button-next",
+        prevEl: ".main_swiper .swiper-button-prev",
+      },
+    });
+  }
+  templateTeamsSlider();
 });

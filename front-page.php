@@ -4,7 +4,7 @@
 
 			<?php the_content(); ?>
 			<section class="section__partenaires">
-				<h2 class="title__partenaires">Partenaires</h2>
+				<h1 class="title__partenaires">Partenaires</h1>
 				<div class="partenaires__items">
 					<a href="#"></a>
 					<a href="#"></a>
