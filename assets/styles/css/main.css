@@ -467,7 +467,7 @@ table {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .homepage__header .header__menu__nav .header__menu {
     display: none;
   }
@@ -482,7 +482,7 @@ table {
     transform: translateX(0);
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .homepage__header .header__menu__nav {
     left: 1rem;
   }
@@ -515,8 +515,27 @@ table {
     padding: 0 1rem;
   }
 }
-.slider__img__homepage {
+.laptop_wallpaper {
   filter: brightness(0.7);
+  height: 100vh;
+  width: 100vw;
+}
+.laptop_wallpaper > figure > img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.mobile_wallpaper {
+  display: none;
+  filter: brightness(0.7);
+  height: 100vh;
+  width: 100vw;
+}
+.mobile_wallpaper > figure > img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .event {
@@ -631,6 +650,14 @@ table {
   font-weight: 700;
 }
 
+@media screen and (max-width: 768px) {
+  .laptop_wallpaper {
+    display: none;
+  }
+  .mobile_wallpaper {
+    display: block;
+  }
+}
 .section__partenaires {
   display: flex;
   flex-direction: column;
@@ -741,7 +768,7 @@ table {
   background-image: url(/wp-content/themes/usdomagne/assets/img/partenaires/vousfinancer.png);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .section__partenaires .partenaires__items > a {
     width: 6rem;
     height: 6rem;
@@ -906,7 +933,7 @@ table {
   opacity: 0.5;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .site__footer .footer__nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -929,7 +956,7 @@ table {
     gap: 2.5rem;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .site__footer .footer__nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1217,7 +1244,7 @@ table {
   padding: 5px;
 }
 .post__single__header__content .post__single__header__fixed > ul > li > a:hover {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .post__single {
@@ -1334,7 +1361,7 @@ table {
   height: auto;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .actualites__content .actualites__content__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1352,7 +1379,7 @@ table {
     object-fit: cover;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .container__behavior {
     margin: 0 !important;
     padding: 0 !important;
@@ -1368,6 +1395,7 @@ table {
   .actualites__content .actualites__content__container .post__link {
     padding: 0.5rem;
     background-color: #f7f7f7;
+    border-radius: 5px;
   }
   .post__single__header__content {
     padding: 0 1rem;
@@ -1409,6 +1437,7 @@ table {
   .last__posts > ul > li {
     padding: 0.5rem;
     background-color: white;
+    border-radius: 5px;
   }
 }
 .section__error__content {
@@ -1684,7 +1713,7 @@ table {
   margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .left__section__image {
     width: 100%;
     height: 24rem;
@@ -1719,11 +1748,10 @@ table {
   top: 0;
   z-index: 10;
   width: 100vw;
-  padding-top: 3rem;
   margin-top: 110px;
 }
 .swiper-header .header-container {
-  margin-left: 10vw;
+  margin-left: 5vw;
 }
 .swiper-header .header-container > ul {
   display: flex;
@@ -1738,21 +1766,26 @@ table {
 }
 .swiper-header .header-container > ul > li:first-of-type > a {
   text-decoration: none;
-  color: grey;
+  color: white;
+  opacity: 0.4;
+}
+.swiper-header .header-container > ul > li:first-of-type > a:hover {
+  opacity: 1;
 }
 .swiper-header .header-container > ul > li:first-of-type > span {
-  color: grey;
+  opacity: 0.4;
+  color: white;
 }
 .swiper-header .header-container > ul > li:first-of-type > p {
-  font-weight: bold;
+  font-weight: 700;
 }
-.swiper-header .header-container > ul > li:last-of-type {
-  font-size: 2.5rem;
+.swiper-header .header-container > ul > li:first-of-type > p > span {
   text-transform: uppercase;
-  font-weight: bold;
 }
 .swiper-header .header-container > ul > li:last-of-type > p {
-  letter-spacing: -3px;
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Bebas Neue", sans-serif;
 }
 .swiper-header .header-container > ul > li {
   color: white;
@@ -1763,6 +1796,7 @@ table {
   height: 100vh;
   overflow: hidden;
   position: relative;
+  filter: brightness(0.7);
 }
 .main_swiper .swiper-wrapper {
   width: 100%;
@@ -1812,6 +1846,7 @@ table {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  border-top: solid 3px #fdcd11;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -1825,7 +1860,7 @@ table {
   border: 1px solid;
   color: #034076;
   font-weight: 700;
-  font-size: 1.15rem;
+  font-size: 1rem;
   background: linear-gradient(to left, #fff 50%, #fdcd11 50%) right;
   background-size: 200%;
   transition: 0.3s ease-out;
@@ -1845,7 +1880,7 @@ table {
   justify-content: center;
   align-items: center;
   overflow: scroll;
-  border-top: solid 3px #fdcd11;
+  overflow-y: hidden;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.1);
   background-image: linear-gradient(to right, #034076 100%, #fdcd11);
@@ -1865,7 +1900,7 @@ table {
   background-color: rgba(0, 0, 0, 0.1);
   background-image: linear-gradient(to right, #034076 100%, #fdcd11);
   color: white;
-  font-size: 1.15rem;
+  font-size: 1.125rem;
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
@@ -1894,7 +1929,6 @@ table {
   font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: -3px;
 }
 .teams__gallery .teams__gallery__content {
   display: grid;
@@ -1934,10 +1968,9 @@ table {
   padding: 6rem 0 0 0;
 }
 .teams__widgets > section > h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: -3px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1946,13 +1979,13 @@ table {
   padding-right: 0.5rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .teams__widgets {
     margin-left: 10vw;
     margin-right: 10vw;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .teams__gallery .teams__gallery__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1971,11 +2004,19 @@ table {
     transform: scale(1.5) translateX(10%);
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+  .swiper-header .header-container {
+    margin-left: 0;
+  }
+  .swiper-header .header-container > ul {
+    align-items: center;
+  }
+  .swiper-header .header-container > ul > li:first-of-type {
+    display: none;
+  }
   .teams__navigation .teams__classement-calendrier__navigation {
     flex-wrap: nowrap;
     gap: 1rem;
-    margin-bottom: 1rem;
     padding: 1rem;
   }
   .teams__navigation .teams__classement-calendrier__navigation > button {
@@ -2013,7 +2054,7 @@ table {
     transform: scale(1.5) translateX(10%);
   }
   .teams__widgets > section {
-    padding-top: 3rem;
+    padding: 3rem 1rem 0;
   }
 }
 .header__template__bis {
@@ -2220,7 +2261,7 @@ table {
   font-size: 1rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .header__template__bis .header__bis__main__image {
     height: 100%;
   }
@@ -2250,6 +2291,7 @@ html body {
   line-height: 1.5;
   font-family: "Barlow", sans-serif;
   font-size: 16px;
+  overflow-x: hidden;
 }
 @font-face {
   font-family: "Barlow", sans-serif;
@@ -2287,7 +2329,7 @@ html .style__border__bottom {
   height: 4px;
   background-image: linear-gradient(to right, #fdcd11 50%, #034076 50%);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   html .template-default__container__behavior {
     display: flex;
     flex-direction: column;

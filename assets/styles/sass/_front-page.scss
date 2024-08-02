@@ -1,5 +1,30 @@
-.slider__img__homepage {
+.laptop_wallpaper {
   filter: brightness(0.7);
+  height: 100vh;
+  width: 100vw;
+
+  & > figure {
+    & > img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+}
+
+.mobile_wallpaper {
+  display: none;
+  filter: brightness(0.7);
+  height: 100vh;
+  width: 100vw;
+
+  & > figure {
+    & > img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
 }
 
 .event {
@@ -127,5 +152,14 @@
   .sbi_load_btn {
     font-size: 1rem;
     font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .laptop_wallpaper {
+    display: none;
+  }
+  .mobile_wallpaper {
+    display: block;
   }
 }

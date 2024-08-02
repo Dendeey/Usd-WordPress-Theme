@@ -291,7 +291,7 @@
         }
 
         & > a:hover {
-          opacity: 0.5;
+          opacity: 0.4;
         }
       }
     }
@@ -448,7 +448,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .actualites__content {
     .actualites__content__container {
       display: grid;
@@ -479,7 +479,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .container__behavior {
     margin: 0 !important;
     padding: 0 !important;
@@ -494,6 +494,7 @@
       .post__link {
         padding: 0.5rem;
         background-color: $grey;
+        border-radius: 5px;
       }
     }
   }
@@ -552,6 +553,7 @@
       & > li {
         padding: 0.5rem;
         background-color: white;
+        border-radius: 5px;
       }
     }
   }

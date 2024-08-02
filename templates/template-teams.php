@@ -26,7 +26,7 @@ get_header();
         <li>
           <a href="#">Accueil</a>
           <span>-</span>
-          <p>Equipes séniors</p>
+          <p><span>é</span>quipes séniors</p>
         </li>
         <li>
           <p>équipes séniors</p>
@@ -39,16 +39,16 @@ get_header();
     <div class="swiper-wrapper">
 
       <div class="swiper-slide">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/img/nouveau_site_usd.png" alt="osef">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/img/EquipeA.JPG" alt="osef">
       </div>
 
       <div class="swiper-slide">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/img/nouveau_site_usd.png" alt="osef">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/img/EquipeA.JPG" alt="osef">
       </div>
 
 
       <div class="swiper-slide">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/img/nouveau_site_usd.png" alt="osef">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/img/EquipeA.JPG" alt="osef">
       </div>
 
     </div>

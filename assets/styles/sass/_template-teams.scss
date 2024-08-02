@@ -3,10 +3,9 @@
   top: 0;
   z-index: 10;
   width: 100vw;
-  padding-top: 3rem;
   margin-top: 110px;
   .header-container {
-    margin-left: 10vw;
+    margin-left: 5vw;
     & > ul {
       display: flex;
       flex-direction: column;
@@ -19,21 +18,29 @@
 
         & > a {
           text-decoration: none;
-          color: grey;
+          color: white;
+          opacity: 0.4;
+        }
+        & > a:hover {
+          opacity: 1;
         }
         & > span {
-          color: grey;
+          opacity: 0.4;
+          color: white;
         }
         & > p {
-          font-weight: bold;
+          font-weight: 700;
+
+          & > span {
+            text-transform: uppercase;
+          }
         }
       }
       & > li:last-of-type {
-        font-size: 2.5rem;
-        text-transform: uppercase;
-        font-weight: bold;
         & > p {
-          letter-spacing: -3px;
+          font-size: 3rem;
+          font-weight: 700;
+          font-family: $titleFont;
         }
       }
       & > li {
@@ -47,6 +54,7 @@
   height: 100vh;
   overflow: hidden;
   position: relative;
+  filter: brightness(0.7);
 
   .swiper-wrapper {
     width: 100%;
@@ -102,7 +110,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-
+    border-top: solid 3px $mainYellow;
     padding-top: 1rem;
     padding-bottom: 1rem;
 
@@ -116,8 +124,7 @@
       border: 1px solid;
       color: $mainBlue;
       font-weight: 700;
-      font-size: 1.15rem;
-
+      font-size: 1rem;
       background: linear-gradient(to left, #fff 50%, $mainYellow 50%) right;
       background-size: 200%;
       transition: 0.3s ease-out;
@@ -141,7 +148,7 @@
     justify-content: center;
     align-items: center;
     overflow: scroll;
-    border-top: solid 3px $mainYellow;
+    overflow-y: hidden;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.1);
     background-image: linear-gradient(to right, $mainBlue 100%, $mainYellow);
@@ -166,7 +173,7 @@
             $mainYellow
           );
           color: white;
-          font-size: 1.15rem;
+          font-size: 1.125rem;
           font-weight: 700;
           text-transform: uppercase;
           cursor: pointer;
@@ -202,7 +209,6 @@
       font-size: 2.5rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: -3px;
     }
   }
 
@@ -253,10 +259,9 @@
     padding: 6rem 0 0 0;
 
     & > h3 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: -3px;
       display: flex;
       flex-wrap: wrap;
 
@@ -268,14 +273,14 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .teams__widgets {
     margin-left: 10vw;
     margin-right: 10vw;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .teams__gallery {
     .teams__gallery__content {
       display: grid;
@@ -304,12 +309,22 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+  .swiper-header {
+    .header-container {
+      margin-left: 0;
+      & > ul {
+        align-items: center;
+        & > li:first-of-type {
+          display: none;
+        }
+      }
+    }
+  }
   .teams__navigation {
     .teams__classement-calendrier__navigation {
       flex-wrap: nowrap;
       gap: 1rem;
-      margin-bottom: 1rem;
       padding: 1rem;
 
       & > button {
@@ -320,7 +335,6 @@
 
     .teams__gallery__navigation {
       justify-content: start;
-
       & > ul {
         gap: 1rem;
       }
@@ -361,7 +375,7 @@
 
   .teams__widgets {
     & > section {
-      padding-top: 3rem;
+      padding: 3rem 1rem 0;
     }
   }
 }

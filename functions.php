@@ -46,12 +46,6 @@ register_nav_menus(array(
     'footer' => 'Bas de page',
 ));
 
-// Déclarer une sidebar
-register_sidebar(array(
-    'id' => 'blog-sidebar',
-    'name' => 'Blog',
-));
-
 // Récupérer les données des champs ACF
 function getClubPageData()
 {
@@ -508,6 +502,7 @@ function eventSix()
 }
 add_shortcode('evenement_6', 'eventSix');
 
+// Fonction permettant de conditionner un comportement par rapport à la page
 function is_custom_page($slug)
 {
     if (is_page($slug)) {
