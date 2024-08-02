@@ -9,7 +9,7 @@
     & > figure {
       & > img {
         width: 100%;
-
+        height: 100vh;
         object-fit: cover;
         box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
         filter: brightness(0.7);
@@ -37,11 +37,11 @@
 
           & > li {
             color: white;
-            font-size: 1rem;
+            font-size: 0.875rem;
 
             & > a {
               color: white;
-              font-size: 1rem;
+              font-size: 0.875rem;
 
               opacity: 0.4;
             }
@@ -56,7 +56,6 @@
 
             .nav__item__bold {
               font-weight: 700;
-              text-transform: uppercase;
             }
           }
         }
@@ -70,9 +69,9 @@
 
         & > h1 {
           color: white;
-          font-size: 2.5rem;
+          font-size: 3.5rem;
 
-          font-weight: 800;
+          font-weight: 700;
           text-transform: uppercase;
         }
 
@@ -85,6 +84,7 @@
 }
 
 .template__bis__convocs {
+  padding: 0 1rem;
   & > p {
     & > iframe {
       margin: 4rem 0 4rem 0;
@@ -104,8 +104,8 @@
   align-items: center;
 
   & > h2 {
-    font-weight: 800;
-    font-size: 2.5rem;
+    font-weight: 700;
+    font-size: $h2Size;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
@@ -137,8 +137,8 @@
   align-items: center;
 
   & > h3 {
-    font-weight: 800;
-    font-size: 2.5rem;
+    font-weight: 700;
+    font-size: $h3Size;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
@@ -171,7 +171,7 @@
     max-width: 50rem;
 
     & > h1 {
-      font-size: 1.5rem;
+      font-size: $h1Size;
       font-weight: 700;
       margin-bottom: 1rem;
       margin-top: 3rem;
@@ -179,7 +179,7 @@
     }
 
     & > h2 {
-      font-size: 1.5rem;
+      font-size: $h2Size;
       font-weight: 700;
       margin-bottom: 1rem;
       margin-top: 3rem;
@@ -202,7 +202,7 @@
     }
 
     & > h3 {
-      font-size: 1.5rem;
+      font-size: $h3Size;
       font-weight: 700;
       margin-bottom: 1rem;
       margin-top: 3rem;
@@ -227,7 +227,7 @@
     & > p {
       margin-bottom: 1rem;
       color: $greyText;
-      font-size: 1.15rem;
+      font-size: $bodyTextSize;
       text-align: justify;
       display: grid;
 
@@ -243,7 +243,7 @@
       color: $greyText;
 
       & > li {
-        font-size: 1.15rem;
+        font-size: $bodyTextSize;
       }
     }
   }
@@ -253,6 +253,16 @@
   .header__template__bis {
     .header__bis__main__image {
       height: 100%;
+    }
+
+    .header__template__bis__container {
+      & > div {
+        .header__template__bis__title {
+          & > h1 {
+            font-size: 2.5rem;
+          }
+        }
+      }
     }
   }
 }

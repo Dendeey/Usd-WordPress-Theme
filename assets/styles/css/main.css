@@ -436,7 +436,7 @@ table {
 .header__all__pages__nav > ul > li {
   color: black;
   font-size: 0.875rem;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Barlow", sans-serif;
 }
 .header__all__pages__nav > ul > li > a {
   color: black;
@@ -451,7 +451,6 @@ table {
 }
 .header__all__pages__nav > ul > li .nav__item__bold {
   font-weight: 700;
-  text-transform: uppercase;
   font-size: 0.875rem;
 }
 
@@ -462,7 +461,7 @@ table {
 }
 .header__all__pages__title > h1 {
   color: black;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -813,7 +812,6 @@ table {
   gap: 2rem;
 }
 .site__footer .footer__nav .footer__nav__item > p {
-  font-size: 1.2rem;
   font-weight: 700;
   color: white;
 }
@@ -831,7 +829,6 @@ table {
   opacity: 0.5;
 }
 .site__footer .footer__nav .footer__nav__item .footer__nav__item__title {
-  font-size: 1.2rem;
   font-weight: 700;
   color: white;
 }
@@ -847,7 +844,6 @@ table {
   gap: 1rem;
 }
 .site__footer .footer__nav .footer__nav__item .footer__burger__menu > li > a {
-  font-size: 1.2rem;
   font-weight: 700;
   color: white;
 }
@@ -864,7 +860,7 @@ table {
 }
 .site__footer .footer__nav .footer__nav__item > nav .burger__equipes > li > a {
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   color: white;
 }
 .site__footer .footer__nav .footer__nav__item > nav .burger__equipes > li > a > span {
@@ -878,7 +874,7 @@ table {
 }
 .site__footer .footer__nav .footer__nav__item > nav .burger__club > li > a {
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   color: white;
 }
 .site__footer .footer__nav .footer__nav__item > nav .burger__club > li > a > span {
@@ -902,7 +898,7 @@ table {
 }
 .site__footer .footer__menu .menu-item > a {
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   font-weight: 700;
   color: white;
 }
@@ -1199,8 +1195,8 @@ table {
   margin-bottom: 4rem;
 }
 .post__single__header__content .post__single__header__fixed > h1 {
-  font-size: 3rem;
-  font-weight: 800;
+  font-size: 3.5rem;
+  font-weight: 700;
   line-height: normal;
 }
 .post__single__header__content .post__single__header__fixed > p {
@@ -1231,7 +1227,7 @@ table {
   padding-bottom: 4rem;
 }
 .post__single .post__single__img {
-  padding-bottom: 6rem;
+  padding-bottom: 3rem;
   padding-top: 3rem;
   display: grid;
 }
@@ -1454,21 +1450,13 @@ table {
   height: 100vh;
   position: sticky;
   top: 0;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
   overflow: hidden;
-}
-.left__section__image .swiper-wrapper {
-  width: 100%;
-  height: 100%;
-}
-.left__section__image .swiper-wrapper .swiper-slide {
-  width: 100%;
-  height: 100%;
 }
 .left__section__image .swiper-wrapper .swiper-slide > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 .left__section__image .swiper-wrapper .swiper-slide > picture > img {
   width: 100%;
@@ -1503,7 +1491,7 @@ table {
 }
 .right__section__content .right__section__container .right__section__header > h1 {
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   font-family: "Bebas Neue", sans-serif;
 }
@@ -1699,15 +1687,15 @@ table {
 @media screen and (max-width: 767px) {
   .left__section__image {
     width: 100%;
-    height: 60vh;
+    height: 24rem;
     position: relative;
   }
-  .left__section__image > figure > img {
+  .left__section__image .swipper-wrapper .swipper-slide > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  .left__section__image > figure > picture > img {
+  .left__section__image .swipper-wrapper .swipper-slide > picture > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -2038,6 +2026,7 @@ table {
 }
 .header__template__bis .header__bis__main__image > figure > img {
   width: 100%;
+  height: 100vh;
   object-fit: cover;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
   filter: brightness(0.7);
@@ -2062,11 +2051,11 @@ table {
 }
 .header__template__bis .header__template__bis__container > div .header__template__bis__nav > ul > li {
   color: white;
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 .header__template__bis .header__template__bis__container > div .header__template__bis__nav > ul > li > a {
   color: white;
-  font-size: 1rem;
+  font-size: 0.875rem;
   opacity: 0.4;
 }
 .header__template__bis .header__template__bis__container > div .header__template__bis__nav > ul > li > a:hover {
@@ -2077,7 +2066,6 @@ table {
 }
 .header__template__bis .header__template__bis__container > div .header__template__bis__nav > ul > li .nav__item__bold {
   font-weight: 700;
-  text-transform: uppercase;
 }
 .header__template__bis .header__template__bis__container > div .header__template__bis__title {
   display: flex;
@@ -2087,14 +2075,17 @@ table {
 }
 .header__template__bis .header__template__bis__container > div .header__template__bis__title > h1 {
   color: white;
-  font-size: 2.5rem;
-  font-weight: 800;
+  font-size: 3.5rem;
+  font-weight: 700;
   text-transform: uppercase;
 }
 .header__template__bis .header__template__bis__container > div .header__template__bis__title > span {
   width: 50%;
 }
 
+.template__bis__convocs {
+  padding: 0 1rem;
+}
 .template__bis__convocs > p > iframe {
   margin: 4rem 0 4rem 0;
   width: 100%;
@@ -2110,8 +2101,8 @@ table {
   align-items: center;
 }
 .template__bis__first__gallery > h2 {
-  font-weight: 800;
-  font-size: 2.5rem;
+  font-weight: 700;
+  font-size: 2rem;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
@@ -2139,8 +2130,8 @@ table {
   align-items: center;
 }
 .template__bis__second__gallery > h3 {
-  font-weight: 800;
-  font-size: 2.5rem;
+  font-weight: 700;
+  font-size: 1.75rem;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
@@ -2169,14 +2160,14 @@ table {
   max-width: 50rem;
 }
 .template__bis__common__content .template__bis__common__content__item > h1 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
   margin-top: 3rem;
   text-transform: uppercase;
 }
 .template__bis__common__content .template__bis__common__content__item > h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
   margin-top: 3rem;
@@ -2193,7 +2184,7 @@ table {
   background-image: linear-gradient(to right, #fdcd11 50%, #034076 50%);
 }
 .template__bis__common__content .template__bis__common__content__item > h3 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 700;
   margin-bottom: 1rem;
   margin-top: 3rem;
@@ -2212,7 +2203,7 @@ table {
 .template__bis__common__content .template__bis__common__content__item > p {
   margin-bottom: 1rem;
   color: #595959;
-  font-size: 1.15rem;
+  font-size: 1rem;
   text-align: justify;
   display: grid;
 }
@@ -2226,12 +2217,15 @@ table {
   color: #595959;
 }
 .template__bis__common__content .template__bis__common__content__item > ul > li {
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 767px) {
   .header__template__bis .header__bis__main__image {
     height: 100%;
+  }
+  .header__template__bis .header__template__bis__container > div .header__template__bis__title > h1 {
+    font-size: 2.5rem;
   }
 }
 html {
@@ -2256,7 +2250,6 @@ html body {
   line-height: 1.5;
   font-family: "Barlow", sans-serif;
   font-size: 16px;
-  overflow-x: hidden;
 }
 @font-face {
   font-family: "Barlow", sans-serif;
