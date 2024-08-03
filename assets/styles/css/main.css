@@ -2014,6 +2014,15 @@ table {
   .swiper-header .header-container > ul > li:first-of-type {
     display: none;
   }
+  .swiper-header .header-container > ul > li:last-of-type > p {
+    font-size: 2rem;
+  }
+  .main_swiper {
+    height: auto;
+  }
+  .main_swiper .swiper-wrapper .swiper-slide > img {
+    height: 24rem;
+  }
   .teams__navigation .teams__classement-calendrier__navigation {
     flex-wrap: nowrap;
     gap: 1rem;

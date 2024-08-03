@@ -132,7 +132,7 @@ window.addEventListener("DOMContentLoaded", function () {
       window.scroll({
         behavior: "smooth",
         left: 0,
-        top: element.offsetTop - 125,
+        top: element.offsetTop,
       });
     };
 

@@ -318,6 +318,21 @@
         & > li:first-of-type {
           display: none;
         }
+        & > li:last-of-type {
+          & > p {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+  .main_swiper {
+    height: auto;
+    .swiper-wrapper {
+      .swiper-slide {
+        & > img {
+          height: 24rem;
+        }
       }
     }
   }

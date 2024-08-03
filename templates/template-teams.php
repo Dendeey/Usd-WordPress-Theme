@@ -26,10 +26,18 @@ get_header();
         <li>
           <a href="#">Accueil</a>
           <span>-</span>
-          <p><span>é</span>quipes séniors</p>
+          <?php if (is_custom_page('pole-seniors')) {
+            echo '<p><span>é</span>quipes séniors</p>';
+          } else if (is_custom_page('pole-jeunes')) {
+            echo '<p><span>é</span>quipes jeunes</p>';
+          } ?>
         </li>
         <li>
-          <p>équipes séniors</p>
+          <?php if (is_custom_page('pole-seniors')) {
+            echo '<p>équipes séniors</p>';
+          } else if (is_custom_page('pole-jeunes')) {
+            echo '<p>équipes jeunes</p>';
+          } ?>
         </li>
       </ul>
     </nav>
@@ -37,20 +45,17 @@ get_header();
   <section class="main_swiper">
 
     <div class="swiper-wrapper">
-
-      <div class="swiper-slide">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/img/EquipeA.JPG" alt="osef">
-      </div>
-
-      <div class="swiper-slide">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/img/EquipeA.JPG" alt="osef">
-      </div>
-
-
-      <div class="swiper-slide">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/img/EquipeA.JPG" alt="osef">
-      </div>
-
+      <?php if (is_custom_page('pole-seniors')) { ?>
+        <div class="swiper-slide">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/img/EquipeA.JPG" alt="osef">
+        </div>
+        <div class="swiper-slide">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/img/EquipeA.JPG" alt="osef">
+        </div>
+        <div class="swiper-slide">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/img/EquipeA.JPG" alt="osef">
+        </div>
+      <?php } ?>
     </div>
     <div class="swiper-pagination"></div>
     <div class="swiper-button-prev"></div>
