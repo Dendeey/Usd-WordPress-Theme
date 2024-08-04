@@ -240,7 +240,6 @@ function getTemplateDefaultBisData()
 }
 
 // Fonction pour créer la section "Derniers articles" sur les pages d'articles (Single).
-
 function derniers_articles()
 {
     $args = array(
@@ -509,4 +508,33 @@ function is_custom_page($slug)
         return true;
     }
     return false;
+}
+
+// Récuperer data des pages séniors et jeunes
+function getCoverSeniorsImgs()
+{
+    $coverSeniorsImgs = [];
+
+    $coverSeniorsImgs['coverImg'] = [];
+
+    $coverSeniorsImgs['coverImg']['coverImg1'] = get_field('image_seniors_a');
+    $coverSeniorsImgs['coverImg']['coverImg2'] = get_field('image_seniors_b');
+    $coverSeniorsImgs['coverImg']['coverImg3'] = get_field('image_seniors_c');
+    $coverSeniorsImgs['coverImg']['coverImg4'] = get_field('image_seniors_d');
+
+    return $coverSeniorsImgs;
+}
+
+function getCoverJeunesImgs()
+{
+    $coverJeunesImgs = [];
+
+    $coverJeunesImgs['coverImg'] = [];
+
+    $coverSeniorsImgs['coverImg']['coverImg1'] = get_field('image_jeunes_a');
+    $coverSeniorsImgs['coverImg']['coverImg2'] = get_field('image_jeunes_b');
+    $coverSeniorsImgs['coverImg']['coverImg3'] = get_field('image_jeunes_c');
+    $coverSeniorsImgs['coverImg']['coverImg4'] = get_field('image_jeunes_d');
+
+    return $coverJeunesImgs;
 }

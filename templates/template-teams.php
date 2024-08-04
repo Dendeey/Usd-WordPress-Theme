@@ -19,6 +19,10 @@ get_header();
   $dataStaff = getStaffTeamsPageData();
 
   $dataWidgets = getScorencoWidgetsTeamPage();
+
+  $dataCoverSeniorsImgs = getCoverSeniorsImgs();
+
+  $dataCoverJeunesImgs = getCoverJeunesImgs();
   ?>
   <section class="swiper-header">
     <nav class="header-container">
@@ -46,15 +50,42 @@ get_header();
 
     <div class="swiper-wrapper">
       <?php if (is_custom_page('pole-seniors')) { ?>
-        <div class="swiper-slide">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/img/EquipeA.JPG" alt="osef">
-        </div>
-        <div class="swiper-slide">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/img/EquipeA.JPG" alt="osef">
-        </div>
-        <div class="swiper-slide">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/img/EquipeA.JPG" alt="osef">
-        </div>
+
+        <?php
+        $countCoverImgs = count($dataCoverSeniorsImgs['coverImg']);
+
+        for ($i = 1; $i < $countCoverImgs; $i++) {
+
+          $keyCoverImg = 'coverImg' . $i;
+          if (isset($dataCoverSeniorsImgs['coverImg'][$keyCoverImg])) {
+            $coverSeniorsImgs = $dataCoverSeniorsImgs['coverImg'][$keyCoverImg];
+          }
+          if ($coverSeniorsImgs) {
+        ?>
+            <div class="swiper-slide">
+              <img src="<?php echo $coverSeniorsImgs['url'] ?>" alt="<?php echo $coverSeniorsImgs['title'] ?>">
+            </div>
+          <?php } ?>
+        <?php } ?>
+      <?php } ?>
+      <?php if (is_custom_page('pole-jeunes')) { ?>
+
+        <?php
+        $countCoverImgs = count($dataCoverJeunesImgs['coverImg']);
+
+        for ($i = 1; $i < $countCoverImgs; $i++) {
+
+          $keyCoverImg = 'coverImg' . $i;
+          if (isset($dataCoverJeunesImgs['coverImg'][$keyCoverImg])) {
+            $coverJeunesImgs = $dataCoverJeunesImgs['coverImg'][$keyCoverImg];
+          }
+          if ($coverJeunesImgs) {
+        ?>
+            <div class="swiper-slide">
+              <img src="<?php echo $coverJeunesImgs['url'] ?>" alt="<?php echo $coverJeunesImgs['title'] ?>">
+            </div>
+          <?php } ?>
+        <?php } ?>
       <?php } ?>
     </div>
     <div class="swiper-pagination"></div>
