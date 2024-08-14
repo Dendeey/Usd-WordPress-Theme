@@ -1828,18 +1828,7 @@ table {
   color: white;
 }
 
-.teams__navigation {
-  position: sticky;
-  left: 0;
-  right: 0;
-  top: 63px;
-  z-index: 1;
-  overflow: hidden;
-  background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to right, #034076 100%, #fdcd11);
-}
-.teams__navigation .teams__classement-calendrier__navigation {
+.teams__classement-calendrier__navigation {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1849,8 +1838,11 @@ table {
   border-top: solid 3px #fdcd11;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to right, #034076 100%, #fdcd11);
 }
-.teams__navigation .teams__classement-calendrier__navigation > button {
+.teams__classement-calendrier__navigation > button {
   justify-content: center;
   align-items: center;
   width: 17rem;
@@ -1868,31 +1860,37 @@ table {
   display: flex;
   text-transform: uppercase;
 }
-.teams__navigation .teams__classement-calendrier__navigation > button > span:nth-of-type(2) {
+.teams__classement-calendrier__navigation > button > span:nth-of-type(2) {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-.teams__navigation .teams__classement-calendrier__navigation > button:hover {
+.teams__classement-calendrier__navigation > button:hover {
   background-position: left;
 }
-.teams__navigation .teams__gallery__navigation {
+
+.teams__gallery__navigation {
+  position: sticky;
+  top: 63px;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: scroll;
   overflow-y: hidden;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.1);
   background-image: linear-gradient(to right, #034076 100%, #fdcd11);
   padding: 1rem;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to right, #034076 100%, #fdcd11);
 }
-.teams__navigation .teams__gallery__navigation > ul {
+.teams__gallery__navigation > ul {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 }
-.teams__navigation .teams__gallery__navigation > ul > li > button {
+.teams__gallery__navigation > ul > li > button {
   width: 10rem;
   text-decoration: none;
   border: none;
@@ -1906,11 +1904,12 @@ table {
   cursor: pointer;
   opacity: 0.5;
 }
-.teams__navigation .teams__gallery__navigation > ul > li > button:hover {
+.teams__gallery__navigation > ul > li > button:hover {
   opacity: 1;
   transition: 0.1s ease-out;
 }
-.teams__navigation .teams__gallery__navigation::-webkit-scrollbar:horizontal {
+
+.teams__gallery__navigation::-webkit-scrollbar:horizontal {
   display: none;
 }
 
@@ -1933,14 +1932,14 @@ table {
 .teams__gallery .teams__gallery__content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  gap: 0.5rem;
 }
 .teams__gallery .teams__gallery__content > figure {
   overflow: hidden;
 }
 .teams__gallery .teams__gallery__content > figure > picture > img {
   width: 100%;
-  height: auto;
+  height: 100%;
   transition: transform 0.5s;
 }
 .teams__gallery .teams__gallery__content > figure > picture > img:hover {
@@ -1948,7 +1947,7 @@ table {
 }
 .teams__gallery .teams__gallery__content > figure > img {
   width: 100%;
-  height: auto;
+  height: 100%;
   transition: transform 0.5s;
 }
 .teams__gallery .teams__gallery__content > figure > img:hover {
@@ -1989,19 +1988,7 @@ table {
   .teams__gallery .teams__gallery__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-  }
-  .teams__gallery .teams__gallery__content > figure > img {
-    width: 100%;
-    height: auto;
-  }
-  .teams__gallery .teams__gallery__content > figure > picture > img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.5s;
-  }
-  .teams__gallery .teams__gallery__content > figure > picture > img:hover {
-    transform: scale(1.5) translateX(10%);
+    gap: 0.5rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2014,19 +2001,19 @@ table {
   .main_swiper .swiper-wrapper .swiper-slide > img {
     height: 24rem;
   }
-  .teams__navigation .teams__classement-calendrier__navigation {
+  .teams__classement-calendrier__navigation {
     flex-wrap: nowrap;
     gap: 1rem;
     padding: 1rem;
   }
-  .teams__navigation .teams__classement-calendrier__navigation > button {
+  .teams__classement-calendrier__navigation > button {
     height: 3.5rem;
     flex-wrap: wrap;
   }
-  .teams__navigation .teams__gallery__navigation {
+  .teams__gallery__navigation {
     justify-content: start;
   }
-  .teams__navigation .teams__gallery__navigation > ul {
+  .teams__gallery__navigation > ul {
     gap: 1rem;
   }
   .teams__gallery {
@@ -2040,18 +2027,6 @@ table {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
     width: 95vw;
-  }
-  .teams__gallery .teams__gallery__content > figure > img {
-    width: 100%;
-    height: auto;
-  }
-  .teams__gallery .teams__gallery__content > figure > picture > img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.5s;
-  }
-  .teams__gallery .teams__gallery__content > figure > picture > img:hover {
-    transform: scale(1.5) translateX(10%);
   }
   .teams__widgets > section {
     padding: 3rem 1rem 0;
@@ -2271,7 +2246,6 @@ table {
 }
 html {
   scroll-behavior: smooth !important;
-  overflow-x: hidden;
   /* width */
   /* Track */
   /* Handle */

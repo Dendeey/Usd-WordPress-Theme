@@ -93,28 +93,28 @@ get_header();
     <div class="swiper-button-next"></div>
   </section>
 
-  <section class="teams__navigation">
 
-    <section class="teams__classement-calendrier__navigation">
-      <button id="classement__teams__anchor">Classement</button>
-      <button id="calendrier-resultats__teams__anchor">
-        <span>Résultats</span>
-        <span>/</span>
-        <span>Calendrier</span>
-      </button>
-    </section>
 
-    <section class="teams__gallery__navigation">
-      <ul>
-        <li><button id="gardiens">Gardiens</button></li>
-        <li><button id="defenseurs">Défenseurs</button></li>
-        <li><button id="milieux">Milieux</button></li>
-        <li><button id="attaquants">Attaquants</button></li>
-        <li><button id="staff">Staff</button></li>
-      </ul>
-    </section>
-
+  <section class="teams__classement-calendrier__navigation">
+    <button id="classement__teams__anchor">Classement</button>
+    <button id="calendrier-resultats__teams__anchor">
+      <span>Résultats</span>
+      <span>/</span>
+      <span>Calendrier</span>
+    </button>
   </section>
+
+  <section class="teams__gallery__navigation">
+    <ul>
+      <li><button id="gardiens">Gardiens</button></li>
+      <li><button id="defenseurs">Défenseurs</button></li>
+      <li><button id="milieux">Milieux</button></li>
+      <li><button id="attaquants">Attaquants</button></li>
+      <li><button id="staff">Staff</button></li>
+    </ul>
+  </section>
+
+
 
   <div class="container__behavior">
 
